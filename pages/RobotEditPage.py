@@ -1,0 +1,2 @@
+class RobotEditPage(object):
+    pass
