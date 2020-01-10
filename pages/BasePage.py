@@ -13,20 +13,16 @@ class BasePage(object):
     driver: WebDriver
     driver = ChromeDrivers.get_driver()
 
-    # logging.basicConfig(level=logging.INFO)
-    # logger = logging.getLogger('my_log')
-
     def find(self, kv) -> WebElement:
         for i in range(5):
-            # WebDriverWait(self.driver, 20).until(EC.presence_of_element_located(kv))
-            ele = self.driver.find_element(*kv)
-        return ele
+            e = self.driver.find_element(*kv)
+        return e
 
     def finds(self, kv):
         time.sleep(3)
         for i in range(3):
-            eles = self.driver.find_elements(*kv)
-        return eles
+            es = self.driver.find_elements(*kv)
+        return es
 
     def select_list(self, filters, values, dialog=False):
         _filters_xpath = '//form[@class="{}"]//input[@placeholder="{}"]'
@@ -35,7 +31,6 @@ class BasePage(object):
         # todo 给下边变量赋值有含义
         a = 'el-form demo-form-inline el-form--inline'
         b = 'el-form demo-ruleForm'
-        '//div[@class="el-select-dropdown el-popper" and @x-placement="bottom-start"]//span[text()="{}"]'
         a1 = By.XPATH, _filters_xpath.format(a, filters)
         b1 = By.XPATH, _filters_xpath.format(b, filters)
         if dialog:
@@ -54,8 +49,9 @@ class BasePage(object):
         self.common_operation("新增")
 
     def find_table(self, name, index):
-        name_location = '//div[@class="el-table__body-wrapper is-scrolling-left"]//div[@class="cell" and text()="{}"]'
-        st = name_location.format(name) + '/ancestor::tr/td[contains(@class,"column_{}")]'.format(index)
+        _location = '//div[contains(@class,"left")]//*[text()="{}"]/ancestor::tr/td[contains(@class,"column_{}")]'
+        # name_location = '//div[@class="el-table__body-wrapper is-scrolling-left"]//div[@class="cell" and text()="{}"]'
+        st = _location.format(name, index)
         return st
 
     def assert_inner(self):
@@ -67,15 +63,19 @@ class BasePage(object):
         return title, key
 
     def assert_outer(self, robot_name):
-        # _status = (By.XPATH, self.find_table(robot_name, 10))
-        _status = (By.XPATH, '//div[@class="el-table__body-wrapper is-scrolling-left"]//div[@class="cell" and text()="name1"]/ancestor::tr/td[contains(@class,"column_4")]')
+        _location = '//div[contains(@class,"left")]//*[text()="{}"]/ancestor::tr/td[contains(@class,"column_{}")]'
 
-        _message = (By.XPATH, '//p[@class="el-message__content"]')
-        results = self.finds(_message)
-        result_list = []
-        # print(self.find_table(robot_name, 4))
-        for i in range(len(results)):
-            s = results[i].get_attribute('innerHTML')
-            result_list.append(s)
+        _status = (By.XPATH, _location.format(robot_name, '10'))
+
+        # _message = (By.XPATH, '//p[@class="el-message__content"]')
+        # results = self.finds(_message)
+        # result_list = []
+        # for i in range(len(results)):
+        #     s = results[i].get_attribute('innerHTML')
+        #     result_list.append(s)
         status = self.find(_status).get_attribute('textContent')
-        return result_list, status
+        return status
+
+    def t(self):
+        self.driver.find_element(By.XPATH, '//div[@class="module-add-panel"]//span[text()= "新增"]')
+        self.driver.find_element(By.XPATH, '//*[text()="序号"]')

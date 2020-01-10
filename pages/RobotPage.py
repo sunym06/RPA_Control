@@ -12,23 +12,23 @@ class RobotPage(BasePage):
     _robotName = (By.XPATH, _base_xpath.format('请输入机器人名称'))
     _robotKind = (By.XPATH, _base_xpath.format('请选择机器人状态'))
 
-    def add_robot(self):
+    def add_rob(self):
         self.add()
         return RobotAddPage()
 
-    def search_robot(self, robot_name, robot_kind, robot_status):
+    def search_rob(self, robot_name, robot_kind, robot_status):
         self.search(robot_name, robot_kind, robot_status)
         return self
 
-    def clear_robot(self):
+    def clear_rob(self):
         self.page_operation("清空")
         return self
 
-    def edit_robot(self, name):
+    def edit_rob(self, name):
         self.list_operation(name, '编辑')
         return RobotEditPage()
 
-    def del_robot(self, name, cancel=False):
+    def del_rob(self, name, cancel=False):
         """
         :param name:指定删除的机器人名称
         :param cancel: 是否取消
@@ -40,7 +40,4 @@ class RobotPage(BasePage):
             self.list_operation(name, "删 除")
         return RobotPage()
 
-    def get_stutas(self):
-        time.sleep(5)
-        s = (By.XPATH, '//div[@class="el-table__body-wrapper is-scrolling-left"]//div[@class="cell" and text()="name1"]/ancestor::tr/td[contains(@class,"column_10")]')
-        self.find(s).get_attribute('textContent')
+

@@ -31,6 +31,7 @@ class HomePage(BasePage):
             self.find(self._Robot).click()
         else:
             self.find(self._RobotManger).click()
+            time.sleep(3)
             self.find(self._Robot).click()
         return RobotPage()
 
