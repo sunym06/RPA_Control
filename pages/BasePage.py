@@ -45,8 +45,20 @@ class BasePage(object):
         WebDriverWait(self.driver, 5).until(EC.presence_of_element_located(_name))
         self.find(_name).click()
 
+    def list_operation(self, option, name):
+        time.sleep(2)
+        _st = '//div[contains(@class,"right")]//*[text()="{}"]/ancestor::tr//span[text()="{}"]'
+        _save = (By.XPATH, '//span[contains(text(),"确定")]')
+        _locator = (By.XPATH, _st.format(name, option))
+        self.find(_locator).click()
+        time.sleep(1)
+        self.find(_save)
+
     def add(self):
         self.common_operation("新增")
+
+    def delete(self, name):
+        self.list_operation('删除', name)
 
     def find_table(self, name, index):
         _location = '//div[contains(@class,"left")]//*[text()="{}"]/ancestor::tr/td[contains(@class,"column_{}")]'

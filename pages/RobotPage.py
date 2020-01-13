@@ -35,9 +35,9 @@ class RobotPage(BasePage):
         :return: 上一页面
         """
         if cancel:
-            self.list_operation(name, '删 除', cancel=True)
+            self.list_operation(name, '删除', cancel=True)
         else:
-            self.list_operation(name, "删 除")
+            self.delete(name)
         return RobotPage()
 
 

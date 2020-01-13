@@ -25,6 +25,6 @@ class TestRobot(object):
         assert _title == title
         assert _status == status
 
-    def test_t(self):
-        self.Pages.to_robot().add_rob().add_robot('name12', '无人值守', '描述123')
-        # self.Pages.to_robot().add_robot().add_robot('name1', '无人值守', '描述123')
+    @pytest.mark.parametrize('robot_name', ['20200113-112d'])
+    def test_del_robot(self, robot_name):
+        self.Pages.to_robot().del_rob(robot_name)
