@@ -3,14 +3,21 @@ import time
 from selenium.webdriver.common.by import By
 from pages.BasePage import BasePage
 from pages.RobotPage import RobotPage
+from tools.ReadYaml import ReadYaml
 
 
 class HomePage(BasePage):
-    _robot_manger_status = (By.XPATH, '//span[text()="机器人管理"]/ancestor::li')
-    _RobotManger = (By.XPATH, '//span[text()="机器人管理"]')
-    _Robot = (By.XPATH, '//span[text()="机器人"]')
-    _RobotGroup = (By.XPATH, '//span[text()="机器人组"]')
-    _RobotLog = (By.XPATH, '//span[text()="机器人日志"]')
+    # _robot_manger_status = (By.XPATH, '//span[text()="机器人管理"]/ancestor::li')
+    # _RobotManger = (By.XPATH, '//span[text()="机器人管理"]')
+    # _Robot = (By.XPATH, '//span[text()="机器人"]')
+    # _RobotGroup = (By.XPATH, '//span[text()="机器人组"]')
+    # _RobotLog = (By.XPATH, '//span[text()="机器人日志"]')
+    # _user = ReadYaml().get_data('LoginPage', '_user')
+    _robot_manger_status = ReadYaml().get_data('HomePage', '_robot_manger_status')
+    _RobotManger = ReadYaml().get_data('HomePage', '_RobotManger')
+    _Robot = ReadYaml().get_data('HomePage', '_Robot')
+    _RobotGroup = ReadYaml().get_data('HomePage', '_RobotGroup')
+    _RobotLog = ReadYaml().get_data('HomePage', '_RobotLog')
 
     def _is_open(self):
         status = False
@@ -26,7 +33,7 @@ class HomePage(BasePage):
         return self
 
     def to_robot(self):
-        time.sleep(3)
+        time.sleep(2)
         if self._is_open():
             self.find(self._Robot).click()
         else:
@@ -35,11 +42,3 @@ class HomePage(BasePage):
             self.find(self._Robot).click()
         return RobotPage()
 
-    # def to_robots(self):
-    #     print("status: " + str(self._is_open()))
-    #     if self._is_open():
-    #         self.find(self._RobotGroup).click()
-    #     else:
-    #         self.find(self._RobotManger).click()
-    #         self.find(self._RobotGroup).click()
-    #     return RobotsPage()

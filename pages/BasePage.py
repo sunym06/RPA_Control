@@ -63,19 +63,16 @@ class BasePage(object):
         return title, key
 
     def assert_outer(self, robot_name):
-        _location = '//div[contains(@class,"left")]//*[text()="{}"]/ancestor::tr/td[contains(@class,"column_{}")]'
-
+        _location = '//div[contains(@class,"right")]//*[text()="{}"]/ancestor::tr/td[contains(@class,"column_{}")]'
         _status = (By.XPATH, _location.format(robot_name, '10'))
-
-        # _message = (By.XPATH, '//p[@class="el-message__content"]')
-        # results = self.finds(_message)
-        # result_list = []
-        # for i in range(len(results)):
-        #     s = results[i].get_attribute('innerHTML')
-        #     result_list.append(s)
+        _message = (By.XPATH, '//p[@class="el-message__content"]')
+        result_list = []
+        results = self.finds(_message)
+        for i in range(len(results)):
+            s = results[i].get_attribute('innerHTML')
+            result_list.append(s)
+        result = ";".join(result_list)
         status = self.find(_status).get_attribute('textContent')
-        return status
+        return result, status
 
-    def t(self):
-        self.driver.find_element(By.XPATH, '//div[@class="module-add-panel"]//span[text()= "新增"]')
-        self.driver.find_element(By.XPATH, '//*[text()="序号"]')
+

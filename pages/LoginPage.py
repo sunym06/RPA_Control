@@ -1,12 +1,13 @@
 from selenium.webdriver.common.by import By
 from pages.BasePage import BasePage
 from pages.HomePage import HomePage
+from tools.ReadYaml import ReadYaml
 
 
 class LoginPage(BasePage):
-    _user = (By.NAME, 'username')
-    _password = (By.NAME, 'password')
-    _login = (By.XPATH, '//span[text()="登录"]')
+    _user = ReadYaml().get_data('LoginPage', '_user')
+    _password = ReadYaml().get_data('LoginPage', '_password')
+    _login = ReadYaml().get_data('LoginPage', '_login')
 
     def login(self, user=None, password=None):
         self.find(self._user).clear()
@@ -17,5 +18,5 @@ class LoginPage(BasePage):
         return HomePage()
 
 
-# if __name__ == "__main__":
-#     a = LoginPage().login()
+if __name__ == "__main__":
+    a = LoginPage().login()

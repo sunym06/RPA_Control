@@ -1,0 +1,11 @@
+LoginPage:
+  _user: name, username
+  _password: name, password
+  _login: xpath, //span[text()="登录"]
+
+HomePage:
+  _robot_manger_status: xpath, //span[text()="机器人管理"]/ancestor::li
+  _RobotManger: xpath, //span[text()="机器人管理"]
+  _Robot: xpath, //span[text()="机器人"]
+  _RobotGroup: xpath, //span[text()="机器人组"]
+  _RobotLog: xpath, //span[text()="机器人日志"]
