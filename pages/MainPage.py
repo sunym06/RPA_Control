@@ -1,6 +1,10 @@
 from selenium.webdriver.chrome.webdriver import WebDriver
+from selenium.webdriver.common.by import By
+
 from pages.BasePage import BasePage
 from pages.LoginPage import LoginPage
+from tools.ReadYaml import ReadYaml
+
 
 
 class MainPage(BasePage):
@@ -10,7 +14,7 @@ class MainPage(BasePage):
     driver: WebDriver
 
     def to_login(self):
-        self.driver.get(self._url)
+        self.driver.get(self._url2)
         return LoginPage()
 
     def close(self):
@@ -20,15 +24,6 @@ class MainPage(BasePage):
 if __name__ == "__main__":
     b = MainPage()
     b.driver.get('https://www.baidu.com/')
-    b.close()
+    kw = ReadYaml().get_data('BaiduPage', 'input')
+    print(kw)
 
-    # js = 'return JSON.stringify(window.performance.timing)'
-    # s = b.execute_script(js)
-    # print(s)
-    # import json
-    # print(json.dumps(json.loads(s), indent=4))
-    # # print(json.dumps(s.json(), indent=4))
-    # # def login(kw=None):
-    # #     b.find_element_by_id('kw').send_keys(kw)
-    # # login()
-    # # # a = MainPage().home()

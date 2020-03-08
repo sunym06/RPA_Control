@@ -1,0 +1,2138 @@
+<html class=" ">
+    <body style="" class="">
+
+        <div id="app">
+            <div class="avue-contail">
+                <div class="avue-header">
+                    <div class="avue-top">
+                        <div class="top-bar__left">
+                            <div class="avue-breadcrumb">
+                                <i class="icon-navicon"></i>
+                            </div>
+                        </div>
+                        <div class="top-bar__title">
+                            <div class="avue-breadcrumb top-bar-word">
+                                <div>RPA管理服务平台</div>
+                            </div>
+                        </div>
+                        <div class="top-bar__right">
+                            <div class="now_time">2020-03-07 星期六 17:11:12</div>
+                            <div class="el-tooltip top-bar__item" aria-describedby="el-tooltip-6133" tabindex="0">
+                                <i class="icon-quanping"></i>
+                            </div>
+                            <img src="/api/system/preview/1124606971782160385" alt="" class="top-bar__img">
+                            <div class="el-dropdown">
+                                <span class="el-dropdown-link el-dropdown-selfdefine" aria-haspopup="list"
+                                      aria-controls="dropdown-menu-7690" role="button" tabindex="0"
+                                      style="color: white;">
+                                    admin
+                                    <i class="el-icon-arrow-down el-icon--right"></i>
+                                </span>
+                                <ul class="el-dropdown-menu el-popper el-dropdown-menu--small" id="dropdown-menu-7690"
+                                    style="display: none;">
+                                    <li tabindex="-1" class="el-dropdown-menu__item"><!---->
+                                        <div class="li-p">首页</div>
+                                    </li>
+                                    <li tabindex="-1" class="el-dropdown-menu__item"><!---->
+                                        <div class="li-p">个人信息</div>
+                                    </li>
+                                    <li tabindex="-1"
+                                        class="el-dropdown-menu__item li-p el-dropdown-menu__item--divided"><!---->退出登录
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="avue-layout">
+                    <div class="avue-left">
+                        <div data-v-67911d51="" class="avue-sidebar">
+                            <div data-v-67911d51="" class="avue-logo" style="background: rgb(8, 36, 107);">
+                                <span>
+                                    <span class="avue-logo_title">
+                                        <img src="img/citic_logo.29280ef0.png" alt=""
+                                             style="width: 168px; height: 48px;">
+                                    </span>
+                                </span>
+                            </div>
+                            <div data-v-67911d51="" class="el-scrollbar" style="height: 100%;">
+                                <div class="el-scrollbar__wrap" style="margin-bottom: -7px; margin-right: -7px;">
+                                    <div class="el-scrollbar__view"><!---->
+                                        <ul data-v-67911d51="" role="menubar" class="el-menu" show-timeout="200">
+                                            <div data-v-67911d51="" class="menu-wrapper">
+                                                <li role="menuitem" aria-haspopup="true" class="el-submenu">
+                                                    <div class="el-submenu__title" style="padding-left: 20px;">
+                                                        <i class="iconfont zxliuchengmobanguanli"></i>
+                                                        <span slot="title" class="">工作流程模板管理</span>
+                                                        <i class="el-submenu__icon-arrow el-icon-arrow-down"></i>
+                                                    </div>
+                                                    <ul role="menu" class="el-menu el-menu--inline"
+                                                        style="display: none;">
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxtaoyongliuchengmoban"></i>
+                                                            <span>流程模板</span>
+                                                        </li>
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxbiaodanguanli"></i>
+                                                            <span>表单管理</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li role="menuitem" aria-haspopup="true" class="el-submenu">
+                                                    <div class="el-submenu__title" style="padding-left: 20px;">
+                                                        <i class="iconfont zxdingshiguanli"></i>
+                                                        <span slot="title" class="">定时计划管理</span>
+                                                        <i class="el-submenu__icon-arrow el-icon-arrow-down"></i>
+                                                    </div>
+                                                    <ul role="menu" class="el-menu el-menu--inline"
+                                                        style="display: none;">
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxicon2"></i>
+                                                            <span>定时计划</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li role="menuitem" aria-haspopup="true" class="el-submenu">
+                                                    <div class="el-submenu__title" style="padding-left: 20px;">
+                                                        <i class="iconfont zxrenwu3"></i>
+                                                        <span slot="title" class="">任务定义管理</span>
+                                                        <i class="el-submenu__icon-arrow el-icon-arrow-down"></i>
+                                                    </div>
+                                                    <ul role="menu" class="el-menu el-menu--inline"
+                                                        style="display: none;">
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxfaqi"></i>
+                                                            <span>任务定义</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li role="menuitem" aria-haspopup="true" class="el-submenu">
+                                                    <div class="el-submenu__title" style="padding-left: 20px;">
+                                                        <i class="iconfont zxdingshiguanli"></i>
+                                                        <span slot="title" class="">定时任务</span>
+                                                        <i class="el-submenu__icon-arrow el-icon-arrow-down"></i>
+                                                    </div>
+                                                    <ul role="menu" class="el-menu el-menu--inline"
+                                                        style="display: none;">
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxdaibantixing"></i>
+                                                            <span>待办任务</span>
+                                                        </li>
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxjiankong"></i>
+                                                            <span>任务监控</span>
+                                                        </li>
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxchaxun"></i>
+                                                            <span>历史查询</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li role="menuitem" aria-haspopup="true" class="el-submenu">
+                                                    <div class="el-submenu__title" style="padding-left: 20px;">
+                                                        <i class="iconfont zxrenwu"></i>
+                                                        <span slot="title" class="">灾备任务</span>
+                                                        <i class="el-submenu__icon-arrow el-icon-arrow-down"></i>
+                                                    </div>
+                                                    <ul role="menu" class="el-menu el-menu--inline"
+                                                        style="display: none;">
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxdaibantixing"></i>
+                                                            <span>待办任务</span>
+                                                        </li>
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxjiankong"></i>
+                                                            <span>任务监控</span>
+                                                        </li>
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxchaxun"></i>
+                                                            <span>历史查询</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li role="menuitem" aria-haspopup="true" class="el-submenu">
+                                                    <div class="el-submenu__title" style="padding-left: 20px;">
+                                                        <i class="iconfont zxchange"></i>
+                                                        <span slot="title" class="">变更任务</span>
+                                                        <i class="el-submenu__icon-arrow el-icon-arrow-down"></i>
+                                                    </div>
+                                                    <ul role="menu" class="el-menu el-menu--inline"
+                                                        style="display: none;">
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxdaibantixing"></i>
+                                                            <span>待办任务</span>
+                                                        </li>
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxjiankong"></i>
+                                                            <span>任务监控</span>
+                                                        </li>
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxchaxun"></i>
+                                                            <span>历史查询</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li role="menuitem" aria-haspopup="true" class="el-submenu">
+                                                    <div class="el-submenu__title" style="padding-left: 20px;">
+                                                        <i class="iconfont zxxunjianguanli"></i>
+                                                        <span slot="title" class="">巡检任务</span>
+                                                        <i class="el-submenu__icon-arrow el-icon-arrow-down"></i>
+                                                    </div>
+                                                    <ul role="menu" class="el-menu el-menu--inline"
+                                                        style="display: none;">
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxdaibantixing"></i>
+                                                            <span>待办任务</span>
+                                                        </li>
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxjiankong"></i>
+                                                            <span>任务监控</span>
+                                                        </li>
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxchaxun"></i>
+                                                            <span>历史查询</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li role="menuitem" aria-haspopup="true" class="el-submenu">
+                                                    <div class="el-submenu__title" style="padding-left: 20px;">
+                                                        <i class="iconfont zxyingjizhihui"></i>
+                                                        <span slot="title" class="">应急任务</span>
+                                                        <i class="el-submenu__icon-arrow el-icon-arrow-down"></i>
+                                                    </div>
+                                                    <ul role="menu" class="el-menu el-menu--inline"
+                                                        style="display: none;">
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxjiankong"></i>
+                                                            <span>任务监控</span>
+                                                        </li>
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxdaibantixing"></i>
+                                                            <span>待办任务</span>
+                                                        </li>
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxchaxun"></i>
+                                                            <span>历史查询</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li role="menuitem" aria-haspopup="true" class="el-submenu">
+                                                    <div class="el-submenu__title" style="padding-left: 20px;">
+                                                        <i class="iconfont zxnavicon-lcpz"></i>
+                                                        <span slot="title" class="">机器人流程管理</span>
+                                                        <i class="el-submenu__icon-arrow el-icon-arrow-down"></i>
+                                                    </div>
+                                                    <ul role="menu" class="el-menu el-menu--inline"
+                                                        style="display: none;">
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxliucheng2"></i>
+                                                            <span>机器人流程</span>
+                                                        </li>
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxliuchengbao"></i>
+                                                            <span>流程包</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li role="menuitem" aria-haspopup="true" class="el-submenu is-opened"
+                                                    aria-expanded="true">
+                                                    <div class="el-submenu__title" style="padding-left: 20px;">
+                                                        <i class="iconfont zxjiqiren2"></i>
+                                                        <span slot="title" class="">机器人管理</span>
+                                                        <i class="el-submenu__icon-arrow el-icon-arrow-down"></i>
+                                                    </div>
+                                                    <ul role="menu" class="el-menu el-menu--inline" style=""
+                                                        data-old-padding-top="" data-old-padding-bottom=""
+                                                        data-old-overflow="">
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item is-active"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxjiqiren"></i>
+                                                            <span>机器人</span>
+                                                        </li>
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxjiqiren1"></i>
+                                                            <span>机器人组</span>
+                                                        </li>
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxjiqirenrizhi"></i>
+                                                            <span>机器人日志</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li role="menuitem" aria-haspopup="true" class="el-submenu">
+                                                    <div class="el-submenu__title" style="padding-left: 20px;">
+                                                        <i class="iconfont zxdingzhihuakaifa"></i>
+                                                        <span slot="title" class="">个人扩展</span>
+                                                        <i class="el-submenu__icon-arrow el-icon-arrow-down"></i>
+                                                    </div>
+                                                    <ul role="menu" class="el-menu el-menu--inline"
+                                                        style="display: none;">
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxyonghuguanli"></i>
+                                                            <span>个人参数</span>
+                                                        </li>
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxshoucangjia"></i>
+                                                            <span>收藏夹</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li role="menuitem" aria-haspopup="true" class="el-submenu">
+                                                    <div class="el-submenu__title" style="padding-left: 20px;">
+                                                        <i class="iconfont zxtongjiguanli"></i>
+                                                        <span slot="title" class="">统计管理</span>
+                                                        <i class="el-submenu__icon-arrow el-icon-arrow-down"></i>
+                                                    </div>
+                                                    <ul role="menu" class="el-menu el-menu--inline"
+                                                        style="display: none;">
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxrenwutongji"></i>
+                                                            <span>巡检任务统计</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li role="menuitem" aria-haspopup="true" class="el-submenu">
+                                                    <div class="el-submenu__title" style="padding-left: 20px;">
+                                                        <i class="iconfont zxgaojingguanli"></i>
+                                                        <span slot="title" class="">告警管理</span>
+                                                        <i class="el-submenu__icon-arrow el-icon-arrow-down"></i>
+                                                    </div>
+                                                    <ul role="menu" class="el-menu el-menu--inline"
+                                                        style="display: none;">
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxgaojing2"></i>
+                                                            <span>告警历史</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li role="menuitem" aria-haspopup="true" class="el-submenu">
+                                                    <div class="el-submenu__title" style="padding-left: 20px;">
+                                                        <i class="iconfont zxxiangdao"></i>
+                                                        <span slot="title" class="">帮助指南</span>
+                                                        <i class="el-submenu__icon-arrow el-icon-arrow-down"></i>
+                                                    </div>
+                                                    <ul role="menu" class="el-menu el-menu--inline"
+                                                        style="display: none;">
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxxiangdao1"></i>
+                                                            <span>任务创建指南</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li role="menuitem" aria-haspopup="true" class="el-submenu">
+                                                    <div class="el-submenu__title" style="padding-left: 20px;">
+                                                        <i class="iconfont zxxitongguanli1"></i>
+                                                        <span slot="title" class="">系统管理</span>
+                                                        <i class="el-submenu__icon-arrow el-icon-arrow-down"></i>
+                                                    </div>
+                                                    <ul role="menu" class="el-menu el-menu--inline"
+                                                        style="display: none;">
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxcaidan"></i>
+                                                            <span>菜单管理</span>
+                                                        </li>
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxjiaoseguanli"></i>
+                                                            <span>角色管理</span>
+                                                        </li>
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxrizhiguanli"></i>
+                                                            <span>日志管理</span>
+                                                        </li>
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxyonghuguanli"></i>
+                                                            <span>用户管理</span>
+                                                        </li>
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxbumenguanli"></i>
+                                                            <span>部门管理</span>
+                                                        </li>
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxzidianguanli"></i>
+                                                            <span>字典管理</span>
+                                                        </li>
+                                                        <li role="menuitem" tabindex="-1" class="el-menu-item"
+                                                            style="padding-left: 40px;">
+                                                            <i class="iconfont zxriqi5"></i>
+                                                            <span>节假日配置</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="el-scrollbar__bar is-horizontal">
+                                    <div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div>
+                                </div>
+                                <div class="el-scrollbar__bar is-vertical">
+                                    <div class="el-scrollbar__thumb"
+                                         style="transform: translateY(0%); height: 59.899%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="avue-main">
+                        <div class="avue-tags"><!---->
+                            <div class="avue-tags__box avue-tags__box--close">
+                                <div class="el-tabs el-tabs--card el-tabs--top">
+                                    <div class="el-tabs__header is-top">
+                                        <div class="el-tabs__nav-wrap is-top">
+                                            <div class="el-tabs__nav-scroll">
+                                                <div role="tablist" class="el-tabs__nav is-top"
+                                                     style="transform: translateX(0px);">
+                                                    <div id="tab-/wel/index" aria-controls="pane-/wel/index" role="tab"
+                                                         tabindex="-1" class="el-tabs__item is-top is-closable">首页
+                                                        <span class="el-icon-close"></span>
+                                                    </div>
+                                                    <div id="tab-/robotManagement/robot"
+                                                         aria-controls="pane-/robotManagement/robot" role="tab"
+                                                         aria-selected="true" tabindex="0"
+                                                         class="el-tabs__item is-top is-active is-closable">机器人
+                                                        <span class="el-icon-close"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="el-tabs__content">
+                                        <div role="tabpanel" id="pane-/wel/index" aria-labelledby="tab-/wel/index"
+                                             class="el-tab-pane" style="display: none;" aria-hidden="true"></div>
+                                        <div role="tabpanel" id="pane-/robotManagement/robot"
+                                             aria-labelledby="tab-/robotManagement/robot" class="el-tab-pane"></div>
+                                    </div>
+                                </div>
+                                <div class="avue-tags__menu el-dropdown">
+                                    <button type="button"
+                                            class="el-button el-button--primary el-button--small el-dropdown-selfdefine"
+                                            aria-haspopup="list" aria-controls="dropdown-menu-5237" role="button"
+                                            tabindex="0"><!----><!---->
+                                        <span>
+                                            更多
+                                            <i class="el-icon-arrow-down el-icon--right"></i>
+                                        </span>
+                                    </button>
+                                    <ul class="el-dropdown-menu el-popper el-dropdown-menu--small"
+                                        id="dropdown-menu-5237" style="display: none;">
+                                        <li tabindex="-1" class="el-dropdown-menu__item li-p"><!---->关闭其它</li>
+                                        <li tabindex="-1" class="el-dropdown-menu__item li-p"><!---->关闭所有</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-v-e1fda1fa="" class="avue-searchs avue-view" style="display: none;">
+                            <div data-v-e1fda1fa="" class="avue-searchs__title">菜单搜索</div>
+                            <div data-v-e1fda1fa="" class="avue-searchs__content">
+                                <div data-v-e1fda1fa="" class="avue-searchs__form">
+                                    <div data-v-e1fda1fa=""
+                                         class="el-input el-input--small el-input-group el-input-group--append"><!---->
+                                        <input type="text" autocomplete="off" placeholder="请输入搜索内容"
+                                               class="el-input__inner"><!----><!---->
+                                        <div class="el-input-group__append">
+                                            <button data-v-e1fda1fa="" type="button"
+                                                    class="el-button el-button--default el-button--small"><!---->
+                                                <i class="el-icon-search"></i><!---->
+                                            </button>
+                                        </div><!---->
+                                    </div>
+                                    <p data-v-e1fda1fa="">
+                                        <span data-v-e1fda1fa="" class="el-tag el-tag--small el-tag--light">你可以使用快捷键esc
+                                            关闭
+                                        </span>
+                                    </p>
+                                </div>
+                                <div data-v-e1fda1fa="" class="avue-searchs__list">
+                                    <div data-v-e1fda1fa="" class="avue-searchs__scrollbar el-scrollbar">
+                                        <div class="el-scrollbar__wrap"
+                                             style="margin-bottom: -7px; margin-right: -7px;">
+                                            <div class="el-scrollbar__view"></div>
+                                        </div>
+                                        <div class="el-scrollbar__bar is-horizontal">
+                                            <div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div>
+                                        </div>
+                                        <div class="el-scrollbar__bar is-vertical">
+                                            <div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="avue-view" style="height: 100%; overflow: hidden auto;"><!---->
+                            <div data-v-5ad2bf90="" class="basic-container avue-view">
+                                <div class="el-card is-always-shadow"><!---->
+                                    <div class="el-card__body">
+                                        <form data-v-5ad2bf90=""
+                                              class="el-form demo-form-inline el-form--label-right el-form--inline">
+                                            <div data-v-5ad2bf90="" class="el-form-item el-form-item--small">
+                                                <label class="el-form-item__label" style="width: 130px;">机器人名称</label>
+                                                <div class="el-form-item__content">
+                                                    <div data-v-5ad2bf90=""
+                                                         class="el-w180 el-input el-input--small el-input--suffix"><!---->
+                                                        <input type="text" autocomplete="off" placeholder="请输入机器人名称"
+                                                               class="el-input__inner"><!----><!----><!----><!---->
+                                                    </div><!---->
+                                                </div>
+                                            </div>
+                                            <div data-v-5ad2bf90="" class="el-form-item el-form-item--small">
+                                                <label class="el-form-item__label" style="width: 130px;">机器人类型</label>
+                                                <div class="el-form-item__content">
+                                                    <div data-v-5ad2bf90=""
+                                                         class="el-select el-w180 el-select--small"><!---->
+                                                        <div class="el-input el-input--small el-input--suffix is-focus"><!---->
+                                                            <input type="text" readonly="readonly" autocomplete="off"
+                                                                   placeholder="请选择机器人类型"
+                                                                   class="el-input__inner"><!---->
+                                                            <span class="el-input__suffix">
+                                                                <span class="el-input__suffix-inner">
+                                                                    <i class="el-select__caret el-input__icon el-icon-arrow-up is-reverse"></i><!----><!----><!----><!----><!---->
+                                                                </span><!---->
+                                                            </span><!----><!---->
+                                                        </div>
+                                                    </div><!---->
+                                                </div>
+                                            </div>
+                                            <div data-v-5ad2bf90="" class="el-form-item el-form-item--small">
+                                                <label class="el-form-item__label" style="width: 130px;">机器人状态</label>
+                                                <div class="el-form-item__content">
+                                                    <div data-v-5ad2bf90=""
+                                                         class="el-select el-w180 el-select--small"><!---->
+                                                        <div class="el-input el-input--small el-input--suffix"><!---->
+                                                            <input type="text" readonly="readonly" autocomplete="off"
+                                                                   placeholder="请选择机器人状态"
+                                                                   class="el-input__inner"><!---->
+                                                            <span class="el-input__suffix">
+                                                                <span class="el-input__suffix-inner">
+                                                                    <i class="el-select__caret el-input__icon el-icon-arrow-up"></i><!----><!----><!----><!----><!---->
+                                                                </span><!---->
+                                                            </span><!----><!---->
+                                                        </div>
+                                                        <div class="el-select-dropdown el-popper"
+                                                             style="display: none; min-width: 180px;">
+                                                            <div class="el-scrollbar" style="">
+                                                                <div class="el-select-dropdown__wrap el-scrollbar__wrap"
+                                                                     style="margin-bottom: -7px; margin-right: -7px;">
+                                                                    <ul class="el-scrollbar__view el-select-dropdown__list"><!---->
+                                                                        <li data-v-5ad2bf90=""
+                                                                            class="el-select-dropdown__item">
+                                                                            <span>空闲</span>
+                                                                        </li>
+                                                                        <li data-v-5ad2bf90=""
+                                                                            class="el-select-dropdown__item">
+                                                                            <span>未注册</span>
+                                                                        </li>
+                                                                        <li data-v-5ad2bf90=""
+                                                                            class="el-select-dropdown__item">
+                                                                            <span>繁忙</span>
+                                                                        </li>
+                                                                        <li data-v-5ad2bf90=""
+                                                                            class="el-select-dropdown__item">
+                                                                            <span>连接断开</span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="el-scrollbar__bar is-horizontal">
+                                                                    <div class="el-scrollbar__thumb"
+                                                                         style="transform: translateX(0%);"></div>
+                                                                </div>
+                                                                <div class="el-scrollbar__bar is-vertical">
+                                                                    <div class="el-scrollbar__thumb"
+                                                                         style="transform: translateY(0%);"></div>
+                                                                </div>
+                                                            </div><!---->
+                                                        </div>
+                                                    </div><!---->
+                                                </div>
+                                            </div>
+                                            <div data-v-5ad2bf90="" class="el-form-item el-form-item--small">
+                                                <label class="el-form-item__label" style="width: 130px;">创建日期</label>
+                                                <div class="el-form-item__content">
+                                                    <div data-v-5ad2bf90=""
+                                                         class="el-date-editor el-range-editor el-input__inner el-w350 el-date-editor--daterange el-range-editor--small">
+                                                        <i class="el-input__icon el-range__icon el-icon-date"></i>
+                                                        <input autocomplete="off" placeholder="开始日期" name=""
+                                                               class="el-range-input">
+                                                        <span class="el-range-separator">至</span>
+                                                        <input autocomplete="off" placeholder="结束日期" name=""
+                                                               class="el-range-input">
+                                                        <i class="el-input__icon el-range__close-icon"></i>
+                                                    </div><!---->
+                                                </div>
+                                            </div>
+                                            <div data-v-5ad2bf90="" class="el-form-item el-form-item--small">
+                                                <label class="el-form-item__label" style="width: 130px;">最后操作日期</label>
+                                                <div class="el-form-item__content">
+                                                    <div data-v-5ad2bf90=""
+                                                         class="el-date-editor el-range-editor el-input__inner el-date-editor--daterange el-range-editor--small"
+                                                         clss="el-w350">
+                                                        <i class="el-input__icon el-range__icon el-icon-date"></i>
+                                                        <input autocomplete="off" placeholder="开始日期" name=""
+                                                               class="el-range-input">
+                                                        <span class="el-range-separator">至</span>
+                                                        <input autocomplete="off" placeholder="结束日期" name=""
+                                                               class="el-range-input">
+                                                        <i class="el-input__icon el-range__close-icon"></i>
+                                                    </div><!---->
+                                                </div>
+                                            </div>
+                                            <div data-v-5ad2bf90="" class="el-form-item el-form-item--small"><!---->
+                                                <div class="el-form-item__content">
+                                                    <button data-v-5ad2bf90="" type="button"
+                                                            class="el-button el-button--primary el-button--small"><!---->
+                                                        <i class="el-icon-search"></i>
+                                                        <span>搜索</span>
+                                                    </button>
+                                                    <button data-v-5ad2bf90="" type="button"
+                                                            class="el-button el-button--default el-button--small"><!---->
+                                                        <i class="el-icon-delete"></i>
+                                                        <span>清空</span>
+                                                    </button><!---->
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div data-v-5ad2bf90="" class="module-add-panel">
+                                            <button data-v-5ad2bf90="" type="button"
+                                                    class="el-button el-button--primary el-button--small"><!---->
+                                                <i class="el-icon-plus"></i>
+                                                <span>新增</span>
+                                            </button>
+                                        </div>
+                                        <div data-v-5ad2bf90=""
+                                             class="el-table el-table--fit el-table--striped el-table--scrollable-x el-table--scrollable-y el-table--enable-row-transition el-table--small"
+                                             style="width: 100%; height: 297px;">
+                                            <div class="hidden-columns">
+                                                <div data-v-5ad2bf90=""></div>
+                                                <div data-v-5ad2bf90=""></div>
+                                                <div data-v-5ad2bf90=""></div>
+                                                <div data-v-5ad2bf90=""></div>
+                                                <div data-v-5ad2bf90=""></div>
+                                                <div data-v-5ad2bf90=""></div>
+                                                <div data-v-5ad2bf90=""></div>
+                                                <div data-v-5ad2bf90=""></div>
+                                                <div data-v-5ad2bf90=""></div>
+                                            </div>
+                                            <div class="el-table__header-wrapper">
+                                                <table cellspacing="0" cellpadding="0" border="0"
+                                                       class="el-table__header" style="width: 970px;">
+                                                    <colgroup>
+                                                        <col name="el-table_4_column_9" width="50">
+                                                        <col name="el-table_4_column_10" width="80">
+                                                        <col name="el-table_4_column_11" width="80">
+                                                        <col name="el-table_4_column_12" width="80">
+                                                        <col name="el-table_4_column_13" width="80">
+                                                        <col name="el-table_4_column_14" width="80">
+                                                        <col name="el-table_4_column_15" width="80">
+                                                        <col name="el-table_4_column_16" width="200">
+                                                        <col name="el-table_4_column_17" width="240">
+                                                        <col name="gutter" width="7">
+                                                    </colgroup>
+                                                    <thead class="has-gutter">
+                                                        <tr class="">
+                                                            <th colspan="1" rowspan="1"
+                                                                class="el-table_4_column_9  is-center   is-leaf">
+                                                                <div class="cell">序号</div>
+                                                            </th>
+                                                            <th colspan="1" rowspan="1"
+                                                                class="el-table_4_column_10  is-center   is-leaf">
+                                                                <div class="cell">机器人名称</div>
+                                                            </th>
+                                                            <th colspan="1" rowspan="1"
+                                                                class="el-table_4_column_11  is-center   is-leaf">
+                                                                <div class="cell">机器人类型</div>
+                                                            </th>
+                                                            <th colspan="1" rowspan="1"
+                                                                class="el-table_4_column_12  is-center   is-leaf">
+                                                                <div class="cell">机器人状态</div>
+                                                            </th>
+                                                            <th colspan="1" rowspan="1"
+                                                                class="el-table_4_column_13  is-center   is-leaf">
+                                                                <div class="cell">所属机器人组</div>
+                                                            </th>
+                                                            <th colspan="1" rowspan="1"
+                                                                class="el-table_4_column_14  is-center   is-leaf">
+                                                                <div class="cell">创建时间</div>
+                                                            </th>
+                                                            <th colspan="1" rowspan="1"
+                                                                class="el-table_4_column_15  is-center   is-leaf">
+                                                                <div class="cell">最后操作日期</div>
+                                                            </th>
+                                                            <th colspan="1" rowspan="1"
+                                                                class="el-table_4_column_16  is-center   is-leaf">
+                                                                <div class="cell">描述</div>
+                                                            </th>
+                                                            <th colspan="1" rowspan="1"
+                                                                class="el-table_4_column_17  is-center   is-hidden is-leaf">
+                                                                <div class="cell">操作</div>
+                                                            </th>
+                                                            <th class="gutter" style="width: 7px;"></th>
+                                                        </tr>
+                                                    </thead>
+                                                </table>
+                                            </div>
+                                            <div class="el-table__body-wrapper is-scrolling-left"
+                                                 style="height: 235px;">
+                                                <table cellspacing="0" cellpadding="0" border="0" class="el-table__body"
+                                                       style="width: 963px;">
+                                                    <colgroup>
+                                                        <col name="el-table_4_column_9" width="50">
+                                                        <col name="el-table_4_column_10" width="80">
+                                                        <col name="el-table_4_column_11" width="80">
+                                                        <col name="el-table_4_column_12" width="80">
+                                                        <col name="el-table_4_column_13" width="80">
+                                                        <col name="el-table_4_column_14" width="80">
+                                                        <col name="el-table_4_column_15" width="80">
+                                                        <col name="el-table_4_column_16" width="200">
+                                                        <col name="el-table_4_column_17" width="240">
+                                                    </colgroup>
+                                                    <tbody>
+                                                        <tr class="el-table__row">
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_9 is-center ">
+                                                                <div class="cell">
+                                                                    <div>1</div>
+                                                                </div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_10 is-center ">
+                                                                <div class="cell">auto_edit65895</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_11 is-center ">
+                                                                <div class="cell">人工参与</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_12 is-center ">
+                                                                <div class="cell">未注册</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_13 is-center ">
+                                                                <div class="cell"></div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_14 is-center ">
+                                                                <div class="cell">2020-03-07 15:21:07</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_15 is-center ">
+                                                                <div class="cell"></div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_16 is-center ">
+                                                                <div class="cell el-tooltip">edit again by Python
+                                                                    3.565895
+                                                                </div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_17 is-center  is-hidden">
+                                                                <div class="cell">
+                                                                    <button data-v-5ad2bf90="" type="button"
+                                                                            class="el-button el-button--text el-button--small"><!---->
+                                                                        <i class="el-icon-edit"></i>
+                                                                        <span>编辑</span>
+                                                                    </button>
+                                                                    <button data-v-5ad2bf90="" type="button"
+                                                                            class="el-button el-button--text el-button--small"><!---->
+                                                                        <i class="el-icon-delete"></i>
+                                                                        <span>删除</span>
+                                                                    </button><!---->
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="el-table__row el-table__row--striped">
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_9 is-center ">
+                                                                <div class="cell">
+                                                                    <div>2</div>
+                                                                </div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_10 is-center ">
+                                                                <div class="cell">auto_edit65900</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_11 is-center ">
+                                                                <div class="cell">无人值守</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_12 is-center ">
+                                                                <div class="cell">未注册</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_13 is-center ">
+                                                                <div class="cell"></div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_14 is-center ">
+                                                                <div class="cell">2020-03-07 15:21:04</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_15 is-center ">
+                                                                <div class="cell"></div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_16 is-center ">
+                                                                <div class="cell el-tooltip">edit again by Python
+                                                                    3.565900
+                                                                </div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_17 is-center  is-hidden">
+                                                                <div class="cell">
+                                                                    <button data-v-5ad2bf90="" type="button"
+                                                                            class="el-button el-button--text el-button--small"><!---->
+                                                                        <i class="el-icon-edit"></i>
+                                                                        <span>编辑</span>
+                                                                    </button>
+                                                                    <button data-v-5ad2bf90="" type="button"
+                                                                            class="el-button el-button--text el-button--small"><!---->
+                                                                        <i class="el-icon-delete"></i>
+                                                                        <span>删除</span>
+                                                                    </button><!---->
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="el-table__row">
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_9 is-center ">
+                                                                <div class="cell">
+                                                                    <div>3</div>
+                                                                </div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_10 is-center ">
+                                                                <div class="cell">auto65589</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_11 is-center ">
+                                                                <div class="cell">人工参与</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_12 is-center ">
+                                                                <div class="cell">未注册</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_13 is-center ">
+                                                                <div class="cell"></div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_14 is-center ">
+                                                                <div class="cell">2020-03-07 15:19:53</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_15 is-center ">
+                                                                <div class="cell"></div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_16 is-center ">
+                                                                <div class="cell el-tooltip">deion65589</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_17 is-center  is-hidden">
+                                                                <div class="cell">
+                                                                    <button data-v-5ad2bf90="" type="button"
+                                                                            class="el-button el-button--text el-button--small"><!---->
+                                                                        <i class="el-icon-edit"></i>
+                                                                        <span>编辑</span>
+                                                                    </button>
+                                                                    <button data-v-5ad2bf90="" type="button"
+                                                                            class="el-button el-button--text el-button--small"><!---->
+                                                                        <i class="el-icon-delete"></i>
+                                                                        <span>删除</span>
+                                                                    </button><!---->
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="el-table__row el-table__row--striped">
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_9 is-center ">
+                                                                <div class="cell">
+                                                                    <div>4</div>
+                                                                </div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_10 is-center ">
+                                                                <div class="cell">auto65586</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_11 is-center ">
+                                                                <div class="cell">人工参与</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_12 is-center ">
+                                                                <div class="cell">未注册</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_13 is-center ">
+                                                                <div class="cell"></div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_14 is-center ">
+                                                                <div class="cell">2020-03-07 15:19:50</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_15 is-center ">
+                                                                <div class="cell"></div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_16 is-center ">
+                                                                <div class="cell el-tooltip">deion65586</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_17 is-center  is-hidden">
+                                                                <div class="cell">
+                                                                    <button data-v-5ad2bf90="" type="button"
+                                                                            class="el-button el-button--text el-button--small"><!---->
+                                                                        <i class="el-icon-edit"></i>
+                                                                        <span>编辑</span>
+                                                                    </button>
+                                                                    <button data-v-5ad2bf90="" type="button"
+                                                                            class="el-button el-button--text el-button--small"><!---->
+                                                                        <i class="el-icon-delete"></i>
+                                                                        <span>删除</span>
+                                                                    </button><!---->
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="el-table__row">
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_9 is-center ">
+                                                                <div class="cell">
+                                                                    <div>5</div>
+                                                                </div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_10 is-center ">
+                                                                <div class="cell">auto65583</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_11 is-center ">
+                                                                <div class="cell">人工参与</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_12 is-center ">
+                                                                <div class="cell">未注册</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_13 is-center ">
+                                                                <div class="cell"></div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_14 is-center ">
+                                                                <div class="cell">2020-03-07 15:19:47</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_15 is-center ">
+                                                                <div class="cell"></div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_16 is-center ">
+                                                                <div class="cell el-tooltip">deion65583</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_17 is-center  is-hidden">
+                                                                <div class="cell">
+                                                                    <button data-v-5ad2bf90="" type="button"
+                                                                            class="el-button el-button--text el-button--small"><!---->
+                                                                        <i class="el-icon-edit"></i>
+                                                                        <span>编辑</span>
+                                                                    </button>
+                                                                    <button data-v-5ad2bf90="" type="button"
+                                                                            class="el-button el-button--text el-button--small"><!---->
+                                                                        <i class="el-icon-delete"></i>
+                                                                        <span>删除</span>
+                                                                    </button><!---->
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="el-table__row el-table__row--striped">
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_9 is-center ">
+                                                                <div class="cell">
+                                                                    <div>6</div>
+                                                                </div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_10 is-center ">
+                                                                <div class="cell">auto65518</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_11 is-center ">
+                                                                <div class="cell">人工参与</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_12 is-center ">
+                                                                <div class="cell">未注册</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_13 is-center ">
+                                                                <div class="cell"></div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_14 is-center ">
+                                                                <div class="cell">2020-03-07 15:18:41</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_15 is-center ">
+                                                                <div class="cell"></div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_16 is-center ">
+                                                                <div class="cell el-tooltip">deion65518</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_17 is-center  is-hidden">
+                                                                <div class="cell">
+                                                                    <button data-v-5ad2bf90="" type="button"
+                                                                            class="el-button el-button--text el-button--small"><!---->
+                                                                        <i class="el-icon-edit"></i>
+                                                                        <span>编辑</span>
+                                                                    </button>
+                                                                    <button data-v-5ad2bf90="" type="button"
+                                                                            class="el-button el-button--text el-button--small"><!---->
+                                                                        <i class="el-icon-delete"></i>
+                                                                        <span>删除</span>
+                                                                    </button><!---->
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="el-table__row">
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_9 is-center ">
+                                                                <div class="cell">
+                                                                    <div>7</div>
+                                                                </div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_10 is-center ">
+                                                                <div class="cell">auto65515</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_11 is-center ">
+                                                                <div class="cell">人工参与</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_12 is-center ">
+                                                                <div class="cell">未注册</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_13 is-center ">
+                                                                <div class="cell"></div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_14 is-center ">
+                                                                <div class="cell">2020-03-07 15:18:39</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_15 is-center ">
+                                                                <div class="cell"></div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_16 is-center ">
+                                                                <div class="cell el-tooltip">deion65515</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_17 is-center  is-hidden">
+                                                                <div class="cell">
+                                                                    <button data-v-5ad2bf90="" type="button"
+                                                                            class="el-button el-button--text el-button--small"><!---->
+                                                                        <i class="el-icon-edit"></i>
+                                                                        <span>编辑</span>
+                                                                    </button>
+                                                                    <button data-v-5ad2bf90="" type="button"
+                                                                            class="el-button el-button--text el-button--small"><!---->
+                                                                        <i class="el-icon-delete"></i>
+                                                                        <span>删除</span>
+                                                                    </button><!---->
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="el-table__row el-table__row--striped">
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_9 is-center ">
+                                                                <div class="cell">
+                                                                    <div>8</div>
+                                                                </div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_10 is-center ">
+                                                                <div class="cell">auto65513</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_11 is-center ">
+                                                                <div class="cell">无人值守</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_12 is-center ">
+                                                                <div class="cell">未注册</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_13 is-center ">
+                                                                <div class="cell"></div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_14 is-center ">
+                                                                <div class="cell">2020-03-07 15:18:36</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_15 is-center ">
+                                                                <div class="cell"></div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_16 is-center ">
+                                                                <div class="cell el-tooltip">deion65513</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_17 is-center  is-hidden">
+                                                                <div class="cell">
+                                                                    <button data-v-5ad2bf90="" type="button"
+                                                                            class="el-button el-button--text el-button--small"><!---->
+                                                                        <i class="el-icon-edit"></i>
+                                                                        <span>编辑</span>
+                                                                    </button>
+                                                                    <button data-v-5ad2bf90="" type="button"
+                                                                            class="el-button el-button--text el-button--small"><!---->
+                                                                        <i class="el-icon-delete"></i>
+                                                                        <span>删除</span>
+                                                                    </button><!---->
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="el-table__row">
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_9 is-center ">
+                                                                <div class="cell">
+                                                                    <div>9</div>
+                                                                </div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_10 is-center ">
+                                                                <div class="cell">auto65450</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_11 is-center ">
+                                                                <div class="cell">无人值守</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_12 is-center ">
+                                                                <div class="cell">未注册</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_13 is-center ">
+                                                                <div class="cell"></div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_14 is-center ">
+                                                                <div class="cell">2020-03-07 15:17:33</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_15 is-center ">
+                                                                <div class="cell"></div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_16 is-center ">
+                                                                <div class="cell el-tooltip">deion65450</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_17 is-center  is-hidden">
+                                                                <div class="cell">
+                                                                    <button data-v-5ad2bf90="" type="button"
+                                                                            class="el-button el-button--text el-button--small"><!---->
+                                                                        <i class="el-icon-edit"></i>
+                                                                        <span>编辑</span>
+                                                                    </button>
+                                                                    <button data-v-5ad2bf90="" type="button"
+                                                                            class="el-button el-button--text el-button--small"><!---->
+                                                                        <i class="el-icon-delete"></i>
+                                                                        <span>删除</span>
+                                                                    </button><!---->
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="el-table__row el-table__row--striped">
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_9 is-center ">
+                                                                <div class="cell">
+                                                                    <div>10</div>
+                                                                </div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_10 is-center ">
+                                                                <div class="cell">auto65447</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_11 is-center ">
+                                                                <div class="cell">人工参与</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_12 is-center ">
+                                                                <div class="cell">未注册</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_13 is-center ">
+                                                                <div class="cell"></div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_14 is-center ">
+                                                                <div class="cell">2020-03-07 15:17:31</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_15 is-center ">
+                                                                <div class="cell"></div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_16 is-center ">
+                                                                <div class="cell el-tooltip">deion65447</div>
+                                                            </td>
+                                                            <td rowspan="1" colspan="1"
+                                                                class="el-table_4_column_17 is-center  is-hidden">
+                                                                <div class="cell">
+                                                                    <button data-v-5ad2bf90="" type="button"
+                                                                            class="el-button el-button--text el-button--small"><!---->
+                                                                        <i class="el-icon-edit"></i>
+                                                                        <span>编辑</span>
+                                                                    </button>
+                                                                    <button data-v-5ad2bf90="" type="button"
+                                                                            class="el-button el-button--text el-button--small"><!---->
+                                                                        <i class="el-icon-delete"></i>
+                                                                        <span>删除</span>
+                                                                    </button><!---->
+                                                                </div>
+                                                            </td>
+                                                        </tr><!---->
+                                                    </tbody>
+                                                </table><!----><!---->
+                                            </div><!----><!---->
+                                            <div class="el-table__fixed-right"
+                                                 style="width: 240px; height: 290px; right: 7px;">
+                                                <div class="el-table__fixed-header-wrapper">
+                                                    <table cellspacing="0" cellpadding="0" border="0"
+                                                           class="el-table__header" style="width: 963px;">
+                                                        <colgroup>
+                                                            <col name="el-table_4_column_9" width="50">
+                                                            <col name="el-table_4_column_10" width="80">
+                                                            <col name="el-table_4_column_11" width="80">
+                                                            <col name="el-table_4_column_12" width="80">
+                                                            <col name="el-table_4_column_13" width="80">
+                                                            <col name="el-table_4_column_14" width="80">
+                                                            <col name="el-table_4_column_15" width="80">
+                                                            <col name="el-table_4_column_16" width="200">
+                                                            <col name="el-table_4_column_17" width="240">
+                                                        </colgroup>
+                                                        <thead class="">
+                                                            <tr class="">
+                                                                <th colspan="1" rowspan="1"
+                                                                    class="el-table_4_column_9  is-center   is-hidden is-leaf">
+                                                                    <div class="cell">序号</div>
+                                                                </th>
+                                                                <th colspan="1" rowspan="1"
+                                                                    class="el-table_4_column_10  is-center   is-hidden is-leaf">
+                                                                    <div class="cell">机器人名称</div>
+                                                                </th>
+                                                                <th colspan="1" rowspan="1"
+                                                                    class="el-table_4_column_11  is-center   is-hidden is-leaf">
+                                                                    <div class="cell">机器人类型</div>
+                                                                </th>
+                                                                <th colspan="1" rowspan="1"
+                                                                    class="el-table_4_column_12  is-center   is-hidden is-leaf">
+                                                                    <div class="cell">机器人状态</div>
+                                                                </th>
+                                                                <th colspan="1" rowspan="1"
+                                                                    class="el-table_4_column_13  is-center   is-hidden is-leaf">
+                                                                    <div class="cell">所属机器人组</div>
+                                                                </th>
+                                                                <th colspan="1" rowspan="1"
+                                                                    class="el-table_4_column_14  is-center   is-hidden is-leaf">
+                                                                    <div class="cell">创建时间</div>
+                                                                </th>
+                                                                <th colspan="1" rowspan="1"
+                                                                    class="el-table_4_column_15  is-center   is-hidden is-leaf">
+                                                                    <div class="cell">最后操作日期</div>
+                                                                </th>
+                                                                <th colspan="1" rowspan="1"
+                                                                    class="el-table_4_column_16  is-center   is-hidden is-leaf">
+                                                                    <div class="cell">描述</div>
+                                                                </th>
+                                                                <th colspan="1" rowspan="1"
+                                                                    class="el-table_4_column_17  is-center   is-leaf">
+                                                                    <div class="cell">操作</div>
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                    </table>
+                                                </div>
+                                                <div class="el-table__fixed-body-wrapper"
+                                                     style="top: 62px; height: 228px;">
+                                                    <table cellspacing="0" cellpadding="0" border="0"
+                                                           class="el-table__body" style="width: 963px;">
+                                                        <colgroup>
+                                                            <col name="el-table_4_column_9" width="50">
+                                                            <col name="el-table_4_column_10" width="80">
+                                                            <col name="el-table_4_column_11" width="80">
+                                                            <col name="el-table_4_column_12" width="80">
+                                                            <col name="el-table_4_column_13" width="80">
+                                                            <col name="el-table_4_column_14" width="80">
+                                                            <col name="el-table_4_column_15" width="80">
+                                                            <col name="el-table_4_column_16" width="200">
+                                                            <col name="el-table_4_column_17" width="240">
+                                                        </colgroup>
+                                                        <tbody>
+                                                            <tr class="el-table__row">
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_9 is-center  is-hidden">
+                                                                    <div class="cell">
+                                                                        <div>1</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_10 is-center  is-hidden">
+                                                                    <div class="cell">auto_edit65895</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_11 is-center  is-hidden">
+                                                                    <div class="cell">人工参与</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_12 is-center  is-hidden">
+                                                                    <div class="cell">未注册</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_13 is-center  is-hidden">
+                                                                    <div class="cell"></div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_14 is-center  is-hidden">
+                                                                    <div class="cell">2020-03-07 15:21:07</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_15 is-center  is-hidden">
+                                                                    <div class="cell"></div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_16 is-center  is-hidden">
+                                                                    <div class="cell el-tooltip">edit again by Python
+                                                                        3.565895
+                                                                    </div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_17 is-center ">
+                                                                    <div class="cell">
+                                                                        <button data-v-5ad2bf90="" type="button"
+                                                                                class="el-button el-button--text el-button--small"><!---->
+                                                                            <i class="el-icon-edit"></i>
+                                                                            <span>编辑</span>
+                                                                        </button>
+                                                                        <button data-v-5ad2bf90="" type="button"
+                                                                                class="el-button el-button--text el-button--small"><!---->
+                                                                            <i class="el-icon-delete"></i>
+                                                                            <span>删除</span>
+                                                                        </button><!---->
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="el-table__row el-table__row--striped">
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_9 is-center  is-hidden">
+                                                                    <div class="cell">
+                                                                        <div>2</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_10 is-center  is-hidden">
+                                                                    <div class="cell">auto_edit65900</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_11 is-center  is-hidden">
+                                                                    <div class="cell">无人值守</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_12 is-center  is-hidden">
+                                                                    <div class="cell">未注册</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_13 is-center  is-hidden">
+                                                                    <div class="cell"></div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_14 is-center  is-hidden">
+                                                                    <div class="cell">2020-03-07 15:21:04</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_15 is-center  is-hidden">
+                                                                    <div class="cell"></div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_16 is-center  is-hidden">
+                                                                    <div class="cell el-tooltip">edit again by Python
+                                                                        3.565900
+                                                                    </div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_17 is-center ">
+                                                                    <div class="cell">
+                                                                        <button data-v-5ad2bf90="" type="button"
+                                                                                class="el-button el-button--text el-button--small"><!---->
+                                                                            <i class="el-icon-edit"></i>
+                                                                            <span>编辑</span>
+                                                                        </button>
+                                                                        <button data-v-5ad2bf90="" type="button"
+                                                                                class="el-button el-button--text el-button--small"><!---->
+                                                                            <i class="el-icon-delete"></i>
+                                                                            <span>删除</span>
+                                                                        </button><!---->
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="el-table__row">
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_9 is-center  is-hidden">
+                                                                    <div class="cell">
+                                                                        <div>3</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_10 is-center  is-hidden">
+                                                                    <div class="cell">auto65589</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_11 is-center  is-hidden">
+                                                                    <div class="cell">人工参与</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_12 is-center  is-hidden">
+                                                                    <div class="cell">未注册</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_13 is-center  is-hidden">
+                                                                    <div class="cell"></div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_14 is-center  is-hidden">
+                                                                    <div class="cell">2020-03-07 15:19:53</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_15 is-center  is-hidden">
+                                                                    <div class="cell"></div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_16 is-center  is-hidden">
+                                                                    <div class="cell el-tooltip">deion65589</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_17 is-center ">
+                                                                    <div class="cell">
+                                                                        <button data-v-5ad2bf90="" type="button"
+                                                                                class="el-button el-button--text el-button--small"><!---->
+                                                                            <i class="el-icon-edit"></i>
+                                                                            <span>编辑</span>
+                                                                        </button>
+                                                                        <button data-v-5ad2bf90="" type="button"
+                                                                                class="el-button el-button--text el-button--small"><!---->
+                                                                            <i class="el-icon-delete"></i>
+                                                                            <span>删除</span>
+                                                                        </button><!---->
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="el-table__row el-table__row--striped">
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_9 is-center  is-hidden">
+                                                                    <div class="cell">
+                                                                        <div>4</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_10 is-center  is-hidden">
+                                                                    <div class="cell">auto65586</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_11 is-center  is-hidden">
+                                                                    <div class="cell">人工参与</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_12 is-center  is-hidden">
+                                                                    <div class="cell">未注册</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_13 is-center  is-hidden">
+                                                                    <div class="cell"></div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_14 is-center  is-hidden">
+                                                                    <div class="cell">2020-03-07 15:19:50</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_15 is-center  is-hidden">
+                                                                    <div class="cell"></div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_16 is-center  is-hidden">
+                                                                    <div class="cell el-tooltip">deion65586</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_17 is-center ">
+                                                                    <div class="cell">
+                                                                        <button data-v-5ad2bf90="" type="button"
+                                                                                class="el-button el-button--text el-button--small"><!---->
+                                                                            <i class="el-icon-edit"></i>
+                                                                            <span>编辑</span>
+                                                                        </button>
+                                                                        <button data-v-5ad2bf90="" type="button"
+                                                                                class="el-button el-button--text el-button--small"><!---->
+                                                                            <i class="el-icon-delete"></i>
+                                                                            <span>删除</span>
+                                                                        </button><!---->
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="el-table__row">
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_9 is-center  is-hidden">
+                                                                    <div class="cell">
+                                                                        <div>5</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_10 is-center  is-hidden">
+                                                                    <div class="cell">auto65583</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_11 is-center  is-hidden">
+                                                                    <div class="cell">人工参与</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_12 is-center  is-hidden">
+                                                                    <div class="cell">未注册</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_13 is-center  is-hidden">
+                                                                    <div class="cell"></div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_14 is-center  is-hidden">
+                                                                    <div class="cell">2020-03-07 15:19:47</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_15 is-center  is-hidden">
+                                                                    <div class="cell"></div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_16 is-center  is-hidden">
+                                                                    <div class="cell el-tooltip">deion65583</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_17 is-center ">
+                                                                    <div class="cell">
+                                                                        <button data-v-5ad2bf90="" type="button"
+                                                                                class="el-button el-button--text el-button--small"><!---->
+                                                                            <i class="el-icon-edit"></i>
+                                                                            <span>编辑</span>
+                                                                        </button>
+                                                                        <button data-v-5ad2bf90="" type="button"
+                                                                                class="el-button el-button--text el-button--small"><!---->
+                                                                            <i class="el-icon-delete"></i>
+                                                                            <span>删除</span>
+                                                                        </button><!---->
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="el-table__row el-table__row--striped">
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_9 is-center  is-hidden">
+                                                                    <div class="cell">
+                                                                        <div>6</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_10 is-center  is-hidden">
+                                                                    <div class="cell">auto65518</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_11 is-center  is-hidden">
+                                                                    <div class="cell">人工参与</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_12 is-center  is-hidden">
+                                                                    <div class="cell">未注册</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_13 is-center  is-hidden">
+                                                                    <div class="cell"></div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_14 is-center  is-hidden">
+                                                                    <div class="cell">2020-03-07 15:18:41</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_15 is-center  is-hidden">
+                                                                    <div class="cell"></div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_16 is-center  is-hidden">
+                                                                    <div class="cell el-tooltip">deion65518</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_17 is-center ">
+                                                                    <div class="cell">
+                                                                        <button data-v-5ad2bf90="" type="button"
+                                                                                class="el-button el-button--text el-button--small"><!---->
+                                                                            <i class="el-icon-edit"></i>
+                                                                            <span>编辑</span>
+                                                                        </button>
+                                                                        <button data-v-5ad2bf90="" type="button"
+                                                                                class="el-button el-button--text el-button--small"><!---->
+                                                                            <i class="el-icon-delete"></i>
+                                                                            <span>删除</span>
+                                                                        </button><!---->
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="el-table__row">
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_9 is-center  is-hidden">
+                                                                    <div class="cell">
+                                                                        <div>7</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_10 is-center  is-hidden">
+                                                                    <div class="cell">auto65515</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_11 is-center  is-hidden">
+                                                                    <div class="cell">人工参与</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_12 is-center  is-hidden">
+                                                                    <div class="cell">未注册</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_13 is-center  is-hidden">
+                                                                    <div class="cell"></div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_14 is-center  is-hidden">
+                                                                    <div class="cell">2020-03-07 15:18:39</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_15 is-center  is-hidden">
+                                                                    <div class="cell"></div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_16 is-center  is-hidden">
+                                                                    <div class="cell el-tooltip">deion65515</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_17 is-center ">
+                                                                    <div class="cell">
+                                                                        <button data-v-5ad2bf90="" type="button"
+                                                                                class="el-button el-button--text el-button--small"><!---->
+                                                                            <i class="el-icon-edit"></i>
+                                                                            <span>编辑</span>
+                                                                        </button>
+                                                                        <button data-v-5ad2bf90="" type="button"
+                                                                                class="el-button el-button--text el-button--small"><!---->
+                                                                            <i class="el-icon-delete"></i>
+                                                                            <span>删除</span>
+                                                                        </button><!---->
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="el-table__row el-table__row--striped">
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_9 is-center  is-hidden">
+                                                                    <div class="cell">
+                                                                        <div>8</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_10 is-center  is-hidden">
+                                                                    <div class="cell">auto65513</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_11 is-center  is-hidden">
+                                                                    <div class="cell">无人值守</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_12 is-center  is-hidden">
+                                                                    <div class="cell">未注册</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_13 is-center  is-hidden">
+                                                                    <div class="cell"></div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_14 is-center  is-hidden">
+                                                                    <div class="cell">2020-03-07 15:18:36</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_15 is-center  is-hidden">
+                                                                    <div class="cell"></div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_16 is-center  is-hidden">
+                                                                    <div class="cell el-tooltip">deion65513</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_17 is-center ">
+                                                                    <div class="cell">
+                                                                        <button data-v-5ad2bf90="" type="button"
+                                                                                class="el-button el-button--text el-button--small"><!---->
+                                                                            <i class="el-icon-edit"></i>
+                                                                            <span>编辑</span>
+                                                                        </button>
+                                                                        <button data-v-5ad2bf90="" type="button"
+                                                                                class="el-button el-button--text el-button--small"><!---->
+                                                                            <i class="el-icon-delete"></i>
+                                                                            <span>删除</span>
+                                                                        </button><!---->
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="el-table__row">
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_9 is-center  is-hidden">
+                                                                    <div class="cell">
+                                                                        <div>9</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_10 is-center  is-hidden">
+                                                                    <div class="cell">auto65450</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_11 is-center  is-hidden">
+                                                                    <div class="cell">无人值守</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_12 is-center  is-hidden">
+                                                                    <div class="cell">未注册</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_13 is-center  is-hidden">
+                                                                    <div class="cell"></div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_14 is-center  is-hidden">
+                                                                    <div class="cell">2020-03-07 15:17:33</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_15 is-center  is-hidden">
+                                                                    <div class="cell"></div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_16 is-center  is-hidden">
+                                                                    <div class="cell el-tooltip">deion65450</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_17 is-center ">
+                                                                    <div class="cell">
+                                                                        <button data-v-5ad2bf90="" type="button"
+                                                                                class="el-button el-button--text el-button--small"><!---->
+                                                                            <i class="el-icon-edit"></i>
+                                                                            <span>编辑</span>
+                                                                        </button>
+                                                                        <button data-v-5ad2bf90="" type="button"
+                                                                                class="el-button el-button--text el-button--small"><!---->
+                                                                            <i class="el-icon-delete"></i>
+                                                                            <span>删除</span>
+                                                                        </button><!---->
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="el-table__row el-table__row--striped">
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_9 is-center  is-hidden">
+                                                                    <div class="cell">
+                                                                        <div>10</div>
+                                                                    </div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_10 is-center  is-hidden">
+                                                                    <div class="cell">auto65447</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_11 is-center  is-hidden">
+                                                                    <div class="cell">人工参与</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_12 is-center  is-hidden">
+                                                                    <div class="cell">未注册</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_13 is-center  is-hidden">
+                                                                    <div class="cell"></div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_14 is-center  is-hidden">
+                                                                    <div class="cell">2020-03-07 15:17:31</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_15 is-center  is-hidden">
+                                                                    <div class="cell"></div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_16 is-center  is-hidden">
+                                                                    <div class="cell el-tooltip">deion65447</div>
+                                                                </td>
+                                                                <td rowspan="1" colspan="1"
+                                                                    class="el-table_4_column_17 is-center ">
+                                                                    <div class="cell">
+                                                                        <button data-v-5ad2bf90="" type="button"
+                                                                                class="el-button el-button--text el-button--small"><!---->
+                                                                            <i class="el-icon-edit"></i>
+                                                                            <span>编辑</span>
+                                                                        </button>
+                                                                        <button data-v-5ad2bf90="" type="button"
+                                                                                class="el-button el-button--text el-button--small"><!---->
+                                                                            <i class="el-icon-delete"></i>
+                                                                            <span>删除</span>
+                                                                        </button><!---->
+                                                                    </div>
+                                                                </td>
+                                                            </tr><!---->
+                                                        </tbody>
+                                                    </table>
+                                                </div><!---->
+                                            </div>
+                                            <div class="el-table__fixed-right-patch"
+                                                 style="width: 7px; height: 62px;"></div>
+                                            <div class="el-table__column-resize-proxy" style="display: none;"></div>
+                                            <div class="el-loading-mask" style="display: none;">
+                                                <div class="el-loading-spinner">
+                                                    <svg viewBox="25 25 50 50" class="circular">
+                                                        <circle cx="50" cy="50" r="20" fill="none"
+                                                                class="path"></circle>
+                                                    </svg><!---->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-v-5ad2bf90="" class="el-pagination is-background"
+                                             style="margin-top: 10px;">
+                                            <span class="el-pagination__total">共 287 条</span>
+                                            <span class="el-pagination__sizes">
+                                                <div class="el-select el-select--mini"><!---->
+                                                    <div class="el-input el-input--mini el-input--suffix"><!---->
+                                                        <input type="text" readonly="readonly" autocomplete="off"
+                                                               placeholder="请选择" class="el-input__inner"><!---->
+                                                        <span class="el-input__suffix">
+                                                            <span class="el-input__suffix-inner">
+                                                                <i class="el-select__caret el-input__icon el-icon-arrow-up"></i><!----><!----><!----><!----><!---->
+                                                            </span><!---->
+                                                        </span><!----><!---->
+                                                    </div>
+                                                    <div class="el-select-dropdown el-popper"
+                                                         style="display: none; min-width: 110px;">
+                                                        <div class="el-scrollbar" style="">
+                                                            <div class="el-select-dropdown__wrap el-scrollbar__wrap"
+                                                                 style="margin-bottom: -7px; margin-right: -7px;">
+                                                                <ul class="el-scrollbar__view el-select-dropdown__list"><!---->
+                                                                    <li class="el-select-dropdown__item selected">
+                                                                        <span>10条/页</span>
+                                                                    </li>
+                                                                    <li class="el-select-dropdown__item">
+                                                                        <span>20条/页</span>
+                                                                    </li>
+                                                                    <li class="el-select-dropdown__item">
+                                                                        <span>30条/页</span>
+                                                                    </li>
+                                                                    <li class="el-select-dropdown__item">
+                                                                        <span>50条/页</span>
+                                                                    </li>
+                                                                    <li class="el-select-dropdown__item">
+                                                                        <span>100条/页</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="el-scrollbar__bar is-horizontal">
+                                                                <div class="el-scrollbar__thumb"
+                                                                     style="transform: translateX(0%);"></div>
+                                                            </div>
+                                                            <div class="el-scrollbar__bar is-vertical">
+                                                                <div class="el-scrollbar__thumb"
+                                                                     style="transform: translateY(0%);"></div>
+                                                            </div>
+                                                        </div><!---->
+                                                    </div>
+                                                </div>
+                                            </span>
+                                            <button type="button" disabled="disabled" class="btn-prev">
+                                                <i class="el-icon el-icon-arrow-left"></i>
+                                            </button>
+                                            <ul class="el-pager">
+                                                <li class="number active">1</li><!---->
+                                                <li class="number">2</li>
+                                                <li class="number">3</li>
+                                                <li class="number">4</li>
+                                                <li class="number">5</li>
+                                                <li class="number">6</li>
+                                                <li class="el-icon more btn-quicknext el-icon-more"></li>
+                                                <li class="number">29</li>
+                                            </ul>
+                                            <button type="button" class="btn-next">
+                                                <i class="el-icon el-icon-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                        <div data-v-5ad2bf90="" class="el-dialog__wrapper" style="display: none;">
+                                            <div role="dialog" aria-modal="true" aria-label="信息提示" class="el-dialog"
+                                                 style="margin-top: 15vh; width: 30%;">
+                                                <div class="el-dialog__header">
+                                                    <span class="el-dialog__title">信息提示</span>
+                                                    <button type="button" aria-label="Close"
+                                                            class="el-dialog__headerbtn">
+                                                        <i class="el-dialog__close el-icon el-icon-close"></i>
+                                                    </button>
+                                                </div><!---->
+                                                <div class="el-dialog__footer">
+                                                    <span data-v-5ad2bf90="" class="dialog-footer">
+                                                        <button data-v-5ad2bf90="" type="button"
+                                                                class="el-button el-button--default el-button--small"><!----><!---->
+                                                            <span>取 消</span>
+                                                        </button>
+                                                        <button data-v-5ad2bf90="" type="button"
+                                                                class="el-button el-button--primary el-button--small"><!----><!---->
+                                                            <span>确 定</span>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-v-5ad2bf90="" class="el-dialog__wrapper"
+                                             style="z-index: 2001; display: none;">
+                                            <div role="dialog" aria-modal="true" aria-label="新增" class="el-dialog"
+                                                 style="margin-top: 15vh; width: 60%;">
+                                                <div class="el-dialog__header">
+                                                    <span class="el-dialog__title">新增</span>
+                                                    <button type="button" aria-label="Close"
+                                                            class="el-dialog__headerbtn">
+                                                        <i class="el-dialog__close el-icon el-icon-close"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="el-dialog__body">
+                                                    <form data-v-5ad2bf90="" class="el-form demo-ruleForm">
+                                                        <div data-v-5ad2bf90="" class="el-row">
+                                                            <div data-v-5ad2bf90="" class="el-col el-col-20">
+                                                                <div data-v-5ad2bf90=""
+                                                                     class="el-form-item is-required el-form-item--small">
+                                                                    <label for="robotId" class="el-form-item__label"
+                                                                           style="width: 130px;">key
+                                                                    </label>
+                                                                    <div class="el-form-item__content"
+                                                                         style="margin-left: 130px;">
+                                                                        <div data-v-5ad2bf90=""
+                                                                             class="el-input el-input--small is-disabled el-input--suffix"><!---->
+                                                                            <input type="text" disabled="disabled"
+                                                                                   autocomplete="off"
+                                                                                   class="el-input__inner"><!----><!----><!----><!---->
+                                                                        </div><!---->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-v-5ad2bf90="" class="el-col el-col-2">
+                                                                <button data-v-5ad2bf90="" type="button"
+                                                                        class="el-button el-button--primary el-button--small"
+                                                                        style="margin-left: 20px;"><!----><!---->
+                                                                    <span>复制</span>
+                                                                </button>
+                                                            </div>
+                                                            <div data-v-5ad2bf90="" class="el-col el-col-12">
+                                                                <div data-v-5ad2bf90=""
+                                                                     class="el-form-item is-required el-form-item--small">
+                                                                    <label for="robotName" class="el-form-item__label"
+                                                                           style="width: 130px;">机器人名称
+                                                                    </label>
+                                                                    <div class="el-form-item__content"
+                                                                         style="margin-left: 130px;">
+                                                                        <div data-v-5ad2bf90=""
+                                                                             class="el-input el-input--small el-input--suffix"><!---->
+                                                                            <input type="text" autocomplete="off"
+                                                                                   maxlength="24" placeholder="请输入机器人名称"
+                                                                                   class="el-input__inner"><!---->
+                                                                            <span class="el-input__suffix">
+                                                                                <span class="el-input__suffix-inner"><!----><!----><!---->
+                                                                                    <span class="el-input__count">
+                                                                                        <span class="el-input__count-inner">
+                                                                                            0/24
+                                                                                        </span>
+                                                                                    </span>
+                                                                                </span><!---->
+                                                                            </span><!----><!---->
+                                                                        </div><!---->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-v-5ad2bf90="" class="el-col el-col-12">
+                                                                <div data-v-5ad2bf90=""
+                                                                     class="el-form-item is-required el-form-item--small">
+                                                                    <label for="robotType" class="el-form-item__label"
+                                                                           style="width: 130px;">机器人类型
+                                                                    </label>
+                                                                    <div class="el-form-item__content"
+                                                                         style="margin-left: 130px;">
+                                                                        <div data-v-5ad2bf90=""
+                                                                             class="el-select el-select--small"
+                                                                             style="width: 100%;"><!---->
+                                                                            <div class="el-input el-input--small el-input--suffix"><!---->
+                                                                                <input type="text" readonly="readonly"
+                                                                                       autocomplete="off"
+                                                                                       placeholder="请选择机器人类型"
+                                                                                       class="el-input__inner"><!---->
+                                                                                <span class="el-input__suffix">
+                                                                                    <span class="el-input__suffix-inner">
+                                                                                        <i class="el-select__caret el-input__icon el-icon-arrow-up"></i><!----><!----><!----><!----><!---->
+                                                                                    </span><!---->
+                                                                                </span><!----><!---->
+                                                                            </div>
+                                                                        </div><!---->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-v-5ad2bf90="" class="el-col el-col-24">
+                                                                <div data-v-5ad2bf90=""
+                                                                     class="el-form-item el-form-item--small">
+                                                                    <label class="el-form-item__label"
+                                                                           style="width: 130px;">描述
+                                                                    </label>
+                                                                    <div class="el-form-item__content"
+                                                                         style="margin-left: 130px;">
+                                                                        <div data-v-5ad2bf90=""
+                                                                             class="el-textarea el-input--small el-input--suffix">
+                                                                            <textarea autocomplete="off"
+                                                                                      placeholder="请输入描述"
+                                                                                      maxlength="500"
+                                                                                      class="el-textarea__inner"
+                                                                                      style="min-height: 202px; height: 202px;"></textarea>
+                                                                            <span class="el-input__count">0/500</span>
+                                                                        </div><!---->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div data-v-5ad2bf90="" class="el-row">
+                                                            <div data-v-5ad2bf90=""
+                                                                 class="el-col el-col-24 el-col-offset-17">
+                                                                <div data-v-5ad2bf90=""
+                                                                     class="el-form-item el-form-item--small"><!---->
+                                                                    <div class="el-form-item__content"
+                                                                         style="margin-left: 130px;">
+                                                                        <button data-v-5ad2bf90="" type="button"
+                                                                                class="el-button el-button--primary el-button--small"><!----><!---->
+                                                                            <span>确 定</span>
+                                                                        </button>
+                                                                        <button data-v-5ad2bf90="" type="button"
+                                                                                class="el-button el-button--default el-button--small"><!----><!---->
+                                                                            <span>取 消</span>
+                                                                        </button><!---->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div><!---->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="avue-shade"></div>
+            </div>
+        </div>
+        <script src="cdn/vue/2.5.2/vue.min.js" charset="utf-8"></script>
+        <script src="cdn/vuex/2.4.1/vuex.min.js" charset="utf-8"></script>
+        <script src="cdn/vue-router/3.0.1/vue-router.min.js" charset="utf-8"></script>
+        <script src="cdn/axios/1.0.0/axios.min.js" charset="utf-8"></script>
+        <script src="cdn/element-ui/2.9.1/index.js" charset="utf-8"></script>
+        <script src="cdn/avue/2.0.5/avue.min.js" charset="utf-8"></script>
+        <script src="cdn/display/bpmn-draw.js"></script>
+        <script src="cdn/display/bpmn-icons.js"></script>
+        <script src="cdn/display/jquery.min.js"></script>
+        <script src="cdn/display/jquery.qtip.min.js"></script>
+        <script src="cdn/display/Polyline.js"></script>
+        <script src="cdn/display/raphael.js"></script>
+        <script src="cdn/display/displaymodel.js"></script>
+        <script src="js/chunk-vendors.d6c31399.js"></script>
+        <script src="js/app.292835b1.js"></script>
+        <div class="el-select-dropdown el-popper"
+             style="min-width: 0px; transform-origin: center top; z-index: 2003; display: none;">
+            <div class="el-scrollbar" style="">
+                <div class="el-select-dropdown__wrap el-scrollbar__wrap"
+                     style="margin-bottom: -7px; margin-right: -7px;">
+                    <ul class="el-scrollbar__view el-select-dropdown__list"><!---->
+                        <li data-v-5ad2bf90="" class="el-select-dropdown__item">
+                            <span>无人值守</span>
+                        </li>
+                        <li data-v-5ad2bf90="" class="el-select-dropdown__item hover">
+                            <span>人工参与</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="el-scrollbar__bar is-horizontal">
+                    <div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div>
+                </div>
+                <div class="el-scrollbar__bar is-vertical">
+                    <div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div>
+                </div>
+            </div><!---->
+            <div x-arrow="" class="popper__arrow" style="left: 35px;"></div>
+        </div>
+        <div class="el-select-dropdown el-popper"
+             style="min-width: 180px; position: absolute; top: 141px; left: 480px; transform-origin: center top; z-index: 2005;"
+             x-placement="bottom-start">
+            <div class="el-scrollbar" style="">
+                <div class="el-select-dropdown__wrap el-scrollbar__wrap"
+                     style="margin-bottom: -7px; margin-right: -7px;">
+                    <ul class="el-scrollbar__view el-select-dropdown__list"><!---->
+                        <li data-v-5ad2bf90="" class="el-select-dropdown__item hover">
+                            <span>无人值守</span>
+                        </li>
+                        <li data-v-5ad2bf90="" class="el-select-dropdown__item">
+                            <span>人工参与</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="el-scrollbar__bar is-horizontal">
+                    <div class="el-scrollbar__thumb" style="transform: translateX(0%);"></div>
+                </div>
+                <div class="el-scrollbar__bar is-vertical">
+                    <div class="el-scrollbar__thumb" style="transform: translateY(0%);"></div>
+                </div>
+            </div><!---->
+            <div x-arrow="" class="popper__arrow" style="left: 35px;"></div>
+        </div>
+    </body>
+</html>

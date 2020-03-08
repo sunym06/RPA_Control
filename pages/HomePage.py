@@ -1,16 +1,16 @@
 import time
 
-from selenium.webdriver.common.by import By
 from pages.BasePage import BasePage
-from pages.RobotPage import RobotPage
+from pages.HomePage2 import RobotPage
+from tools.ReadYaml import ReadYaml
 
 
 class HomePage(BasePage):
-    _robot_manger_status = (By.XPATH, '//span[text()="机器人管理"]/ancestor::li')
-    _RobotManger = (By.XPATH, '//span[text()="机器人管理"]')
-    _Robot = (By.XPATH, '//span[text()="机器人"]')
-    _RobotGroup = (By.XPATH, '//span[text()="机器人组"]')
-    _RobotLog = (By.XPATH, '//span[text()="机器人日志"]')
+    _robot_manger_status = ReadYaml().get_location('HomePage', '_robot_manger_status')
+    _RobotManger = ReadYaml().get_location('HomePage', '_RobotManger')
+    _Robot = ReadYaml().get_location('HomePage', '_Robot')
+    _RobotGroup = ReadYaml().get_location('HomePage', '_RobotGroup')
+    _RobotLog = ReadYaml().get_location('HomePage', '_RobotLog')
 
     def _is_open(self):
         status = False

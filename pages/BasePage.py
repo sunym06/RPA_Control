@@ -7,6 +7,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 from drivers.ChromeDrivers import ChromeDrivers
+from tools.ReadYaml import ReadYaml
 
 
 class BasePage(object):
@@ -14,8 +15,13 @@ class BasePage(object):
     driver = ChromeDrivers.get_driver()
 
     def find(self, kv) -> WebElement:
+        # e = WebDriverWait(self.driver, 5).until(EC.presence_of_element_located(lambda x: (*kv)))
         for i in range(5):
             e = self.driver.find_element(*kv)
+        return e
+
+    def find_t(self,k, v):
+        e = WebDriverWait(self.driver, 5).until(EC.presence_of_element_located((k,v)))
         return e
 
     def finds(self, kv):
@@ -79,3 +85,7 @@ class BasePage(object):
     def t(self):
         self.driver.find_element(By.XPATH, '//div[@class="module-add-panel"]//span[text()= "新增"]')
         self.driver.find_element(By.XPATH, '//*[text()="序号"]')
+
+    def read_yaml(self, value):
+        _local = ReadYaml().get_location(value)
+        return _local
