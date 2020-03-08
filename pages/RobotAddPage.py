@@ -14,8 +14,8 @@ class RobotAddPage(BasePage):
         self.find(self._description).send_keys(robot_description)
         title, key = self.assert_inner()
         self.find(self._save).click()
-        # result, status = self.assert_outer(robot_name)
-        # return title, key, result, status
+        result, status = self.assert_outer(robot_name)
+        return title, key, result, status
 
     def cancel_robot(self):
         self.cancel()
