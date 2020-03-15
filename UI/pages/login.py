@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
 from UI.pages.base import Base
-from UI.pages.easypage import Easy
+from UI.pages.robots import Robots
 from UI.pages.home import Home
 
 
@@ -15,7 +15,7 @@ class Login(Base):
         self.find(self.pwd).send_keys(pwd)
         self.find(self.bt).click()
         # return Home()
-        return Easy()
+        return Robots()
 
 
 if __name__ == '__main__':

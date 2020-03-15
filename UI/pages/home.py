@@ -1,9 +1,9 @@
 from selenium.webdriver.common.by import By
 from UI.pages.base import Base
 from UI.pages.change import Change
-from UI.pages.easypage import Easy
-from UI.pages.robot_group import RobotGroup
 from UI.pages.robots import Robots
+from UI.pages.robot_group import RobotGroup
+from UI.pages.robots_del import Robots
 
 
 class Home(Base):
@@ -25,7 +25,7 @@ class Home(Base):
 
     def to_robot_cpy(self):
         self.to_meno('机器人管理', '机器人')
-        return Easy()
+        return Robots()
 
     def to_robot_group(self):
         self.to_meno('机器人管理', '机器人组')

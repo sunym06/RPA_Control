@@ -1,11 +1,11 @@
 import allure
 import pytest
 
-from UI.pages.easypage import Easy
+from UI.pages.robots import Robots
 
 
-class TestEasy(object):
-    a = Easy()
+class TestRobots(object):
+    a = Robots()
 
     @allure.title('新增机器人')
     @allure.description('添加各种类的机器人')
@@ -34,7 +34,7 @@ class TestEasy(object):
         ('修改前', '修改后', 'edit robot'),
         ('修改前', '修改后', 'edit robot'),
     ])
-    def test_edit_robot(self, name, new_name, description, uuid, add_robot2):
+    def test_edit_robot(self, name, new_name, description, uuid, add_robot):
         key, result = self.a.edit(name + uuid, new_name + uuid, description + ', No.'+uuid)
         assert '成功' in result
 
@@ -44,7 +44,7 @@ class TestEasy(object):
         ('修改前', '修改后', '修改机器人', '机器人组'),
         ('修改前', '修改后', '修改机器人', '机器人组')
     ])
-    def test_edit_robot_group(self, name, new_name, description, op, uuid, add_robot_group2):
+    def test_edit_robot_group(self, name, new_name, description, op, uuid, add_robot_group):
         key, result = self.a.edit(name + uuid, new_name + uuid, description, op)
         assert '成功' in result
 
@@ -52,7 +52,7 @@ class TestEasy(object):
         ('auto_create_for_del',  'for del '),
         ('auto_create_for_del',  'for del ')
     ])
-    def test_del_robot(self, name, description, uuid, add_robot2):
+    def test_del_robot(self, name, description, uuid, add_robot):
         r = self.a.delete(name + uuid)
         assert '成功' in r
 
@@ -61,7 +61,7 @@ class TestEasy(object):
         ('auto_create_for_del', '机器人组')
 
     ])
-    def test_del_robot_group(self, name, op, uuid, add_robot_group2):
+    def test_del_robot_group(self, name, op, uuid, add_robot_group):
         r = self.a.delete(name + uuid, '机器人组')
         assert '成功' in r
 
@@ -69,7 +69,7 @@ class TestEasy(object):
         ('绑定用机器人'),
         ('绑定用机器人')
     ])
-    def test_bounding(self, name, uuid, add_robot2, add_robot_group2):
+    def test_bounding(self, name, uuid, add_robot, add_robot_group):
         r = self.a.bounding(name + uuid, [name + uuid])
         assert '成功' in r
 
