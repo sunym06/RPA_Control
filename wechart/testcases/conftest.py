@@ -21,7 +21,7 @@ def token():
 
 
 @pytest.fixture(scope='session')
-def name():
+def names():
     return 'tom'
 
 

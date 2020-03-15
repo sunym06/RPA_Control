@@ -96,8 +96,9 @@ class Base(object):
         menu_second = (By.XPATH, '//span[text()="{}"]'.format(second))
         titile_value = self.find(title_location).get_attribute('innerText')
         if titile_value != second:
+            print(menu_frist)
             ele = WebDriverWait(self.driver, 5, 0.5).until(EC.element_to_be_clickable(menu_frist))
-            # self.find(menu_frist).click()
+            time.sleep(1)
             ele.click()
             WebDriverWait(self.driver, 5, 0.5).until(EC.element_to_be_clickable(menu_second))
             self.find(menu_second).click()
