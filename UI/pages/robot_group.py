@@ -9,16 +9,22 @@ class RobotGroup(Base):
 
     name_location = (By.CSS_SELECTOR, 'label[for="robotGroupName"] + div input')
     des_location = (By.XPATH, '//label[text()="描述"]/..//textarea')
-    # bounded_list = (By.XPATH, '//div[@aria-label="查看已绑定机器人"]//table[@class="el-table__body"]//td[@class="el-table_25_column_148 is-center "]/div')
     bounded_list = (By.XPATH, '//div[@aria-label="查看已绑定机器人"]//table[@class="el-table__body"]//td[@class="el-table_25_column_148 is-center "]/div')
 
     def add_robot_group(self, group_name, group_kind, description):
+        title = (By.XPATH, '//div[@aria-selected="true"]')
+        T = self.find(title).get_attribute('innerText')
+        print(T)
+        if T != '机器人组':
+            from UI.pages.home import Home
+            Home().to_robot_group()
         self.common_op('新增')
         self.input(self.name_location, group_name)
         self.ul('请选择机器人组类型', group_kind)
         self.input(self.des_location, description)
         self.common_op('确 定')
         result = self.get_value('result')
+        time.sleep(1)
         return result
 
     def del_robot_group(self, group_name):
@@ -61,8 +67,5 @@ class RobotGroup(Base):
 
 if __name__ == '__main__':
     a = RobotGroup()
-    # print(a.del_robot_group('auto_group4'))
-    # print(a.edit_robot_group('auto_group3', 'edite2', '测试'))
-    # print(a.view_robot_group('edite2'))
-    l = ['20191231-004', 'T12a1s11bc']
-    print(a.bound_robot_group('auto_group', l))
+    bounded = ['auto59879', 'dfds']
+    print(a.bound_robot_group('auto_group', bounded))

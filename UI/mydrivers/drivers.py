@@ -20,4 +20,5 @@ if __name__ == '__main__':
     cmd = r'chrome.exe --remote-debugging-port=9222 --user-data-dir="C:\selenum\AutomationProfile"'
     os.system(cmd)
     a = Drivers()
+    # http://111.231.110.64:8222/#/wel/index
     a.chrome_driver()

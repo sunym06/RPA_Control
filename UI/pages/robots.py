@@ -11,6 +11,12 @@ class Robots(Base):
     bt_sure = (By.XPATH, '//form//span[text()="确 定"]')
 
     def add_robot(self, robot_name, robot_kind, description=None):
+        title = (By.XPATH, '//div[@aria-selected="true"]')
+        T = self.find(title).get_attribute('innerText')
+        print(T)
+        if T != '机器人':
+            from UI.pages.home import Home
+            Home().to_robot()
         self.common_op('新增')
         self.input(self.robot_name, robot_name)
         self.ul('请选择机器人类型', robot_kind)
@@ -18,7 +24,6 @@ class Robots(Base):
         self.find(self.bt_sure).click()
         key = self.get_value('key')
         result = self.get_value('result')
-        time.sleep(1)
         return key, result
 
     def edit_robot(self, robot_name, new_name, robot_kind, description=None):
@@ -72,4 +77,5 @@ class Robots(Base):
 if __name__ == '__main__':
     time.sleep(3)
     a = Robots()
-    print(a.search_robot(robot_name='auto', modify_start='2020-03-10'))
+    a.add_robot('st', '无人值守', '答复')
+    # print(a.search_robot(robot_name='auto', modify_start='2020-03-10'))

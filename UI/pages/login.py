@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 
 from UI.pages.base import Base
+from UI.pages.easypage import Easy
 from UI.pages.home import Home
 
 
@@ -13,8 +14,10 @@ class Login(Base):
         self.find(self.user).send_keys(user)
         self.find(self.pwd).send_keys(pwd)
         self.find(self.bt).click()
-        return Home()
+        # return Home()
+        return Easy()
 
 
 if __name__ == '__main__':
     Login().login('admin', '111111')
+    # a = ('ta', 'fa{}')

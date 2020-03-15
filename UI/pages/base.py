@@ -1,3 +1,4 @@
+import random
 import re
 import time
 
@@ -13,11 +14,15 @@ from UI.mydrivers.drivers import Drivers
 
 class Base(object):
     driver = Drivers().chrome_driver()
+    # todo 统一查找元素、点击元素、查找列表元素等场景，以便设置显示等待、
 
     def find(self, kw) -> WebElement:
-        print(*kw)
         ele = WebDriverWait(self.driver, 5, 0.5).until(EC.presence_of_element_located(kw))
         return ele
+
+    # def find_click(self, kw) -> WebElement:
+    #     ele = WebDriverWait(self.driver, 3, 0.5).until(EC.element_to_be_clickable(kw))
+    #     return ele
 
     def input(self, kw, value):
         if value is not None:
@@ -43,8 +48,11 @@ class Base(object):
         self.find(location).send_keys(date)
 
     def common_op(self, op):
+        time.sleep(2)
         location = (By.XPATH, '//button/span[contains(text(),"{}")]'.format(op))
-        self.find(location).click()
+        # WebDriverWait(self.driver, 5, 0.5).until(EC.presence_of_element_located(location))
+        ele = WebDriverWait(self.driver, 8, 0.5).until(EC.element_to_be_clickable(location))
+        ele.click()
 
     def get_total(self, ele='span[class="el-pagination__total"]'):
         element = (By.CSS_SELECTOR, ele)
@@ -57,13 +65,11 @@ class Base(object):
     #     b = (By.XPATH, '//button/span[contains(text(),"确")]')
     #     c = (By.XPATH, '//button/span[contains(text(),"确")]')
 
-    def find_name(self, name, options, clumn=None):
-        e = (By.XPATH, '//div[contains(@class, "fixed")]//tbody/tr')
-        op = (By.XPATH, '//div[contains(@class, "fixed")]//div[text()="{}"]'
-                        '/../../td//button/span[text()="{}"]'.format(name, options))
-        ops = (By.XPATH, '//div[text()="{}"]/../..//span[@class="el-checkbox__inner"]'.format(name))
+    def find_name(self, name, options):
+        table_location = (By.XPATH, '//table[contains(@class, "body")]')
+        op = (By.XPATH, '//div[text()="{}"]/../../td//button/span[text()="{}"]'.format(name, options))
         action_chains = ActionChains(self.driver)
-        ele = self.find(e)
+        ele = self.find(table_location)
         action_chains.click(ele).send_keys(Keys.HOME).perform()
         tries = 4
         while tries > 0:
@@ -79,11 +85,39 @@ class Base(object):
         keys = (By.XPATH, '//input[@disabled="disabled"]')
         results = (By.CSS_SELECTOR, 'div[role="alert"] p')
         if kind == 'key':
-            key = self.find(keys).get_attribute('value')
-            return key
+            result = self.find(keys).get_attribute('value')
         else:
             result = self.find(results).get_attribute('innerHTML')
-            return result
+        return result
+
+    def to_menu_cpy(self, frist, second):
+        title_location = (By.XPATH, '//div[@aria-selected="true"]')
+        menu_frist = (By.XPATH, '//span[text()="{}"]/../..'.format(frist))
+        menu_second = (By.XPATH, '//span[text()="{}"]'.format(second))
+        titile_value = self.find(title_location).get_attribute('innerText')
+        if titile_value != second:
+            ele = WebDriverWait(self.driver, 5, 0.5).until(EC.element_to_be_clickable(menu_frist))
+            # self.find(menu_frist).click()
+            ele.click()
+            WebDriverWait(self.driver, 5, 0.5).until(EC.element_to_be_clickable(menu_second))
+            self.find(menu_second).click()
+
+    def get_kind(self, op='机器人'):
+        robot_list = ['无人值守', '人工参与']
+        robot_group_list = ['开发', '测试', '生产']
+        if op == '机器人':
+            result = random.choice(robot_list)
+        else:
+            result = random.choice(robot_group_list)
+        return result
+
+    def confirm(self, K=1):
+        bt_yes = (By.XPATH, '//button/span[contains(text(),"确定")]')
+        dialog_confirm = (By.XPATH, '//div[contains(@class,"dialog__footer")]//button/span[contains(text(),"确")]')
+        if K == 1:
+            self.find(dialog_confirm).click()
+        else:
+            self.find(bt_yes).click()
 
 
 if __name__ == '__main__':

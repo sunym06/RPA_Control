@@ -1,42 +1,41 @@
-import time
-
-from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-
 from UI.pages.base import Base
+from UI.pages.change import Change
+from UI.pages.easypage import Easy
+from UI.pages.robot_group import RobotGroup
 from UI.pages.robots import Robots
 
 
 class Home(Base):
-    robot_meno = (By.XPATH, '//span[text()="机器人管理"]')
-    robot_menu_status = (By.XPATH, '//span[text()="机器人管理"]/../..')
-    robot = (By.XPATH, '//span[text()="机器人"]')
-    warn = (By.XPATH, '//span[text()="告警管理"]')
+
+    def to_meno(self, frist, second):
+        menu_frist = (By.XPATH, '//span[text()="{}"]/../..'.format(frist))
+        menu_second = (By.XPATH, '//span[text()="{}"]'.format(second))
+        title = (By.XPATH, '//div[@aria-selected="true"]')
+        menu_status = self.find(menu_frist).get_attribute('className')
+        T = self.find(title).get_attribute('innerText')
+        if T != second:
+            if 'is-opened' not in menu_status:
+                self.find(menu_frist).click()
+            self.find(menu_second).click()
 
     def to_robot(self):
-        status = self.find(self.robot_menu_status).get_attribute('className')
-        if 'is-opened' in status:
-            self.find(self.robot).click()
-        else:
-            self.find(self.robot_meno).click()
-            self.find(self.robot).click()
+        self.to_meno('机器人管理', '机器人')
         return Robots()
 
-    def to_warn(self):
-        self.find(self.warn).click()
+    def to_robot_cpy(self):
+        self.to_meno('机器人管理', '机器人')
+        return Easy()
+
+    def to_robot_group(self):
+        self.to_meno('机器人管理', '机器人组')
+        return RobotGroup()
+
+    def to_change(self):
+        # self.find(self.warn).click()
+        self.to_meno('变更任务', '待办任务')
+        return Change()
 
 
 if __name__ == '__main__':
-    time.sleep(3)
     a = Home()
-    # a.to_robot()
-    # time.sleep(3)
-    ele = a.driver.find_element_by_xpath('//div[contains(@class, "fixed")]//tbody/tr')
-    # a.driver.find_element_by_xpath('//div[contains(@class, "fixed")]//tbody/tr').send_keys(Keys.PAGE_DOWN)
-    actionChains = ActionChains(a.driver)
-    actionChains.click(ele).send_keys(Keys.PAGE_DOWN).perform()
-    # a.driver.find_element_by_xpath('//div[contains(@class, "fixed")]//tbody/tr').click()
-    # a.driver
-    # a.to_robot()
-
