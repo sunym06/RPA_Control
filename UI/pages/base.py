@@ -52,6 +52,7 @@ class Base(object):
         location = (By.XPATH, '//button/span[contains(text(),"{}")]'.format(op))
         # WebDriverWait(self.driver, 5, 0.5).until(EC.presence_of_element_located(location))
         ele = WebDriverWait(self.driver, 8, 0.5).until(EC.element_to_be_clickable(location))
+        print(location)
         ele.click()
 
     def get_total(self, ele='span[class="el-pagination__total"]'):
@@ -67,7 +68,10 @@ class Base(object):
 
     def find_name(self, name, options):
         table_location = (By.XPATH, '//table[contains(@class, "body")]')
-        op = (By.XPATH, '//div[text()="{}"]/../../td//button/span[text()="{}"]'.format(name, options))
+        if isinstance(options, str):
+            op = (By.XPATH, '//div[text()="{}"]/../../td//button/span[text()="{}"]'.format(name, options))
+        else:
+            op = (By.XPATH, '//div[text()="{}"]/../../td[position()={}]//div/div'.format(name, options))
         action_chains = ActionChains(self.driver)
         ele = self.find(table_location)
         action_chains.click(ele).send_keys(Keys.HOME).perform()
@@ -96,7 +100,6 @@ class Base(object):
         menu_second = (By.XPATH, '//span[text()="{}"]'.format(second))
         titile_value = self.find(title_location).get_attribute('innerText')
         if titile_value != second:
-            print(menu_frist)
             ele = WebDriverWait(self.driver, 5, 0.5).until(EC.element_to_be_clickable(menu_frist))
             time.sleep(1)
             ele.click()
@@ -112,7 +115,7 @@ class Base(object):
             result = random.choice(robot_group_list)
         return result
 
-    def confirm(self, K=1):
+    def confirm(self, K = 1):
         bt_yes = (By.XPATH, '//button/span[contains(text(),"确定")]')
         dialog_confirm = (By.XPATH, '//div[contains(@class,"dialog__footer")]//button/span[contains(text(),"确")]')
         if K == 1:
@@ -120,9 +123,34 @@ class Base(object):
         else:
             self.find(bt_yes).click()
 
+    def close_dialog(self, title):
+        bt = (By.XPATH, '//div[@aria-label="{}"]//button[@aria-label="Close"]'.format(title))
+        self.find(bt).click()
+
+    def uuid(self):
+        s = str(time.time())
+        return s[6:10]
+
 
 if __name__ == '__main__':
-    bt_add = (By.XPATH, '//button/span[text()="新增"]')
-    robot_name = (By.CSS_SELECTOR, 'div[class="el-dialog__body"] input[placeholder="请输入机器人名称"]')
+    # bt_add = (By.XPATH, '//button/span[text()="新增"]')
+    # robot_name = (By.CSS_SELECTOR, 'div[class="el-dialog__body"] input[placeholder="请输入机器人名称"]')
     a = Base()
-    a.find_name('3.5_0221', '删除')
+    # a.find_name('3.5_0221', '删除')
+    next = (By.XPATH, '//div[@id="titlebar"]//a[@id="next"]')
+    mok = (By.XPATH, '//th[text()="所属模块"]/../td')
+    li = (By.XPATH, '//li[text()="/RPA流程设计器"]')
+    save = (By.XPATH, '//div[@id="titlebar"]//button[text()="保存"]')
+    edit = (By.XPATH, '//div[@id="titlebar"]//a[@title="编辑"]')
+    time.sleep(1)
+    for i in range(60):
+        a.find(next).click()
+        a.find(edit).click()
+        a.find(mok).click()
+        a.find(li).click()
+        a.find(save).click()
+
+# driver.find_element_by_xpath('//div[@id="titlebar"]//a[@id="next"]').click()
+# driver.find_element_by_xpath('//th[text()="所属模块"]/../td').click()
+# driver.find_element_by_xpath('//li[text()="/RPA流程设计器"]').click()
+# driver.find_element_by_xpath('//div[@id="titlebar"]//button[text()="保存"]').click()

@@ -1,9 +1,6 @@
 from selenium.webdriver.common.by import By
 from UI.pages.base import Base
-from UI.pages.change import Change
 from UI.pages.robots import Robots
-from UI.pages.robot_group import RobotGroup
-from UI.pages.robots_del import Robots
 
 
 class Home(Base):
@@ -27,14 +24,9 @@ class Home(Base):
         self.to_meno('机器人管理', '机器人')
         return Robots()
 
-    def to_robot_group(self):
-        self.to_meno('机器人管理', '机器人组')
-        return RobotGroup()
-
-    def to_change(self):
-        # self.find(self.warn).click()
-        self.to_meno('变更任务', '待办任务')
-        return Change()
+    # def to_robot_group(self):
+    #     self.to_meno('机器人管理', '机器人组')
+    #     return RobotGroup()
 
 
 if __name__ == '__main__':
