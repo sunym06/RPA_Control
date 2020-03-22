@@ -3,6 +3,7 @@ import time
 
 import pytest
 
+from UI.pages.clock import Clock
 from UI.pages.robots import Robots
 
 
@@ -39,20 +40,8 @@ def unbounded(name, uuid, add_robot, add_robot_group):
     time.sleep(3)
 
 
-
-def v(end, start=0):
-    return random.randint(start, end)
-
-def cron():
-    # 0 / 5 * * * * ?
-    second = v(59)
-    minutes = v(59)
-    hours = v(23)
-    day = v(31)
-    month = v(12)
-
-    for i in range(10):
-        s = random.randint(1, 5)
-        print(s)
-
-a = cron()
+@pytest.fixture(scope='function')
+def add_clock(plan_name, task_name, cron_time, uuid):
+    a = Clock()
+    a.add_clock(plan_name + 'No.' + uuid, task_name, cron_time)
+    time.sleep(5)

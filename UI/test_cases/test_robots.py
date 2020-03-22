@@ -71,6 +71,7 @@ class TestRobots(object):
     @pytest.mark.parametrize('name, new_name, description, op', [
         ('修改前', '修改后', '修改机器人', '机器人组'),
         ('修改前', '修改后', '修改机器人', '机器人组')
+
     ])
     def test_edit_robot_group(self, name, new_name, description, op, uuid, add_robot_group):
         key, result = self.a.edit(name + uuid, new_name + uuid, description, op)

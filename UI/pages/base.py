@@ -72,6 +72,8 @@ class Base(object):
             op = (By.XPATH, '//div[text()="{}"]/../../td//button/span[text()="{}"]'.format(name, options))
         else:
             op = (By.XPATH, '//div[text()="{}"]/../../td[position()={}]//div/div'.format(name, options))
+            print(op)
+
         action_chains = ActionChains(self.driver)
         ele = self.find(table_location)
         action_chains.click(ele).send_keys(Keys.HOME).perform()
@@ -109,10 +111,16 @@ class Base(object):
     def get_kind(self, op='机器人'):
         robot_list = ['无人值守', '人工参与']
         robot_group_list = ['开发', '测试', '生产']
+        data_list = ['系统日历', '海外市场日历', 'Ta', '美国日历', 'gh']
+        scheduling = ['仅节假日', '仅工作日', '全部时间段']
         if op == '机器人':
             result = random.choice(robot_list)
-        else:
+        elif op == '机器人组':
             result = random.choice(robot_group_list)
+        elif op == '日历模板':
+            result = random.choice(data_list)
+        elif op == '排期':
+            result = random.choice(scheduling)
         return result
 
     def confirm(self, K = 1):
